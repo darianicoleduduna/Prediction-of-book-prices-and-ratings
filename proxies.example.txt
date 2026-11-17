@@ -1,0 +1,3 @@
+# Un proxy pe linie. Optional - lasa fisierul gol/inexistent ca sa mergi direct.
+# http://user:parola@host:port
+# http://host:port
