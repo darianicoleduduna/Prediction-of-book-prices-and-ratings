@@ -7,6 +7,7 @@ from urllib.parse import quote_plus
 from bs4 import BeautifulSoup
 
 from .extract import parse_product, norm
+from .http import BlockedError
 from .sites import SITES, extract_links
 
 log = logging.getLogger("scraper.enrich")
@@ -41,20 +42,44 @@ def enrich_from_goodreads(client, book, min_match=0.6):
     attempts.append((f"{_clean(book.titlu)} {first_author}".strip(), False))
 
     for query, by_isbn in attempts:
-        search_url = site.search_url.format(q=quote_plus(query), page=1)
-        html = client.get(search_url)
-        if not html:
-            continue
-        book_url = _canonical_book_url(html)
-        page = html
+        if by_isbn:
+            # Goodreads resolves ISBNs directly to a canonical book page on some requests;
+            # try this before its /search endpoint, which may return a WAF challenge.
+            isbn_url = f"{site.base}/book/isbn/{quote_plus(query)}"
+            try:
+                html = client.get(isbn_url)
+            except BlockedError as e:
+                log.warning("Goodreads: opresc imbogatirea dupa blocajul serverului (%s)", e)
+                return False
+            book_url = _canonical_book_url(html) if html else None
+            page = html
+        else:
+            book_url = None
+            page = None
+
         if not book_url:
-            links = extract_links(html, search_url, site)
-            if not links:
+            search_url = site.search_url.format(q=quote_plus(query), page=1)
+            try:
+                html = client.get(search_url)
+            except BlockedError as e:
+                log.warning("Goodreads: opresc imbogatirea dupa blocajul serverului (%s)", e)
+                return False
+            if not html:
                 continue
-            book_url = links[0]
-            page = client.get(book_url)
-            if not page:
-                continue
+            book_url = _canonical_book_url(html)
+            page = html
+            if not book_url:
+                links = extract_links(html, search_url, site)
+                if not links:
+                    continue
+                book_url = links[0]
+                try:
+                    page = client.get(book_url)
+                except BlockedError as e:
+                    log.warning("Goodreads: opresc imbogatirea dupa blocajul serverului (%s)", e)
+                    return False
+                if not page:
+                    continue
         gr = parse_product(page, book_url, "goodreads", "", "", site.genres_selector)
         if not gr:
             continue

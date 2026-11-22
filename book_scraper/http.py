@@ -2,6 +2,7 @@
 cache pe disc, rotatie User-Agent/proxy cand apar blocaje."""
 import hashlib
 import logging
+import os
 import random
 import time
 import urllib.robotparser
@@ -29,7 +30,8 @@ class PoliteClient:
     def __init__(self, min_delay=3.0, max_delay=9.0, domain_delays=None,
                  long_pause_every=(20, 40), long_pause=(30, 90),
                  max_retries=4, block_limit=3, proxies=None,
-                 cache_dir="cache", respect_robots=True, timeout=30):
+                 cache_dir="cache", respect_robots=True, timeout=30,
+                 ignore_robots_domains=None):
         self.min_delay, self.max_delay = min_delay, max_delay
         self.domain_delays = domain_delays or {}   # {"goodreads.com": (6, 18)}
         self.long_pause_every, self.long_pause = long_pause_every, long_pause
@@ -38,6 +40,11 @@ class PoliteClient:
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.respect_robots, self.timeout = respect_robots, timeout
+        self.scrapfly_key = os.environ.get("SCRAPFLY_KEY", "").strip()
+        self.scrapfly_cost_budget = os.environ.get("SCRAPFLY_COST_BUDGET", "").strip()
+        self.ignore_robots_domains = {
+            d.lower().removeprefix("www.") for d in (ignore_robots_domains or [])
+        }
 
         self._sessions, self._last_req, self._count = {}, {}, {}
         self._next_pause, self._blocks, self._robots = {}, {}, {}
@@ -98,7 +105,7 @@ class PoliteClient:
         return self.cache_dir / (hashlib.sha1(url.encode()).hexdigest() + ".html")
 
     def _allowed(self, url, domain):
-        if not self.respect_robots:
+        if not self.respect_robots or domain in self.ignore_robots_domains:
             return True
         if domain not in self._robots:
             rp = urllib.robotparser.RobotFileParser()
@@ -115,6 +122,35 @@ class PoliteClient:
         if not ok:
             log.warning("robots.txt interzice: %s", url)
         return ok
+
+    def _get_via_scrapfly(self, url):
+        if not self.scrapfly_key:
+            return None
+        params = {
+            "key": self.scrapfly_key,
+            "url": url,
+            "unblocker": "true",
+            "format": "raw",
+            "proxified_response": "true",
+        }
+        if self.scrapfly_cost_budget:
+            params["cost_budget"] = self.scrapfly_cost_budget
+        try:
+            resp = requests.get("https://api.scrapfly.io/scrape", params=params, timeout=160)
+        except requests.RequestException as e:
+            log.warning("Scrapfly request failed: %s", e)
+            return None
+        if resp.status_code != 200:
+            reject_code = resp.headers.get("X-Scrapfly-Reject-Code", "")
+            log.warning("Scrapfly HTTP %s%s", resp.status_code,
+                        f" ({reject_code})" if reject_code else "")
+            return None
+        html = resp.text
+        if not html or (resp.headers.get("x-amzn-waf-action", "").lower() == "challenge"):
+            log.warning("Scrapfly did not return usable Goodreads HTML")
+            return None
+        log.info("Goodreads HTML obtained via Scrapfly Unblocker")
+        return html
 
     # ---------- API ----------
     def get(self, url, use_cache=True):
@@ -146,6 +182,19 @@ class PoliteClient:
                 continue
 
             status, text = resp.status_code, resp.text
+            waf_action = resp.headers.get("x-amzn-waf-action", "")
+            if "challenge" in waf_action.lower():
+                log.warning("[%s] WAF challenge (%s) pe %s", domain, status, url)
+                if domain == "goodreads.com" and self.scrapfly_key:
+                    html = self._get_via_scrapfly(url)
+                    if html:
+                        self._blocks[domain] = 0
+                        self._last_url[domain] = url
+                        cp.write_text(html, encoding="utf-8")
+                        return html
+                self._blocks[domain] = self.block_limit
+                log.warning("[%s] opresc cererile dupa WAF challenge", domain)
+                raise BlockedError(f"{domain}: WAF challenge")
             captcha = status == 200 and len(text) < 5000 and "captcha" in text.lower()
             if status == 200 and not captcha:
                 self._blocks[domain] = 0
@@ -159,6 +208,9 @@ class PoliteClient:
                 log.warning("[%s] blocat/limitat (%s) pe %s", domain, status, url)
                 if self._blocks[domain] >= self.block_limit:
                     raise BlockedError(f"{domain}: {self._blocks[domain]} blocaje consecutive")
+            else:
+                detail = f", x-amzn-waf-action={waf_action}" if waf_action else ""
+                log.warning("[%s] raspuns HTTP %s pe %s%s", domain, status, url, detail)
             self._backoff(domain, attempt, resp.headers.get("Retry-After"), rotate=True)
         log.error("renunt la %s dupa %d incercari", url, self.max_retries)
         return None
