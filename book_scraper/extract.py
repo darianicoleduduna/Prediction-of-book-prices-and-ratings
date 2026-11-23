@@ -5,6 +5,7 @@ import re
 import unicodedata
 from dataclasses import dataclass, field, asdict
 from typing import Optional
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -144,6 +145,17 @@ def _spec_pairs(soup):
         dd = dt.find_next_sibling("dd")
         if dd:
             pairs.setdefault(norm(dt.get_text()), dd.get_text(" ", strip=True))
+    # Some stores render specifications as adjacent label/value elements instead
+    # of a table or a dt/dd list (Bookzone uses this layout on product pages).
+    for el in soup.find_all(["th", "strong", "label", "span", "div", "p", "li"]):
+        label = norm(el.get_text(" ", strip=True))
+        if label not in LABEL_LOOKUP:
+            continue
+        sibling = el.find_next_sibling()
+        if sibling:
+            value = sibling.get_text(" ", strip=True)
+            if value and norm(value) not in LABEL_LOOKUP:
+                pairs.setdefault(label, value)
     for el in soup.find_all(["li", "p", "div", "span"]):
         if el.find(["li", "p", "div", "table"]):
             continue
@@ -261,6 +273,14 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
             if val:
                 b.pret = val
                 break
+    # Bookzone presents its current price after the PRP price in the product
+    # purchase block; some variants have no Product offers or price class.
+    if b.pret is None and source == "bookzone":
+        page_text = soup.get_text(" ", strip=True)
+        match = re.search(r"PRP\s*:\s*[\d.,]+\s*Lei.*?(\d+(?:[.,]\d{1,2})?)\s*Lei",
+                          page_text, flags=re.IGNORECASE)
+        if match:
+            b.pret, b.moneda = to_float(match.group(1)), "RON"
     if b.pret is not None and not b.moneda:
         b.moneda = "RON"
 
@@ -285,6 +305,7 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
     b.editie = detect_edition(b.titlu, spec.get("editie", ""), desc[:600])
     b.keywords = sorted(set(find_tropes(f"{b.titlu} {desc}")) | {norm(g) for g in gen_list})
 
-    if not b.titlu or not (prod or b.pret or b.nr_pagini):
+    is_bookzone_product = source == "bookzone" and re.search(r"/carte/[^/]+", urlsplit(url).path)
+    if not b.titlu or not (prod or b.pret or b.nr_pagini or is_bookzone_product):
         return None     # pagina nu e de produs
     return b

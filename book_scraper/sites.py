@@ -30,10 +30,12 @@ SITES = {
                     "online & fizic", "romana", r"^/(?:carte|carte-engleza)/.+/\d+/?$"),
     "elefant": Site("elefant", "https://www.elefant.ro",
                     "https://www.elefant.ro/search?SearchTerm={q}&PageNumber={page}",
-                    "online", "romana", price_selector=".product-price .current-price, .current-price"),
-    "bookzone": Site("bookzone", "https://www.bookzone.ro",
-                     "https://www.bookzone.ro/cautare?q={q}&page={page}",
-                     "online", "romana"),
+                    "online", "romana",
+                    r"_[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/?$",
+                    price_selector=".product-price .current-price, .current-price"),
+    "bookzone": Site("bookzone", "https://bookzone.ro",
+                     "https://bookzone.ro/carti/{q}?pagina={page}",
+                     "online", "romana", r"^/carte/[^/]+/?$"),
     "goodreads": Site("goodreads", "https://www.goodreads.com",
                       "https://www.goodreads.com/search?q={q}&page={page}",
                       "", "", r"^/book/show/\d+",
@@ -53,7 +55,21 @@ def _host(u):
 def extract_links(html, page_url, site: Site):
     soup = BeautifulSoup(html, "lxml")
     out, seen = [], set()
-    for a in soup.find_all("a", href=True):
+    if site.name == "elefant":
+        # Pagina de categorie are și carusele promoționale cu produse; folosim
+        # exclusiv grila rezultatelor, ca să nu amestecăm recomandările cu lista.
+        listing = soup.select_one(
+            "#family-page.product-search-result .product-list.js-productlist"
+        )
+        if listing is None:
+            listing = soup.select_one(
+                ".product-search-result .product-list.js-productlist"
+            )
+        anchors = listing.find_all("a", href=True) if listing else []
+    else:
+        anchors = soup.find_all("a", href=True)
+
+    for a in anchors:
         full = urljoin(page_url, a["href"]).split("#")[0]
         p = urlparse(full)
         if _host(full) != _host(site.base):

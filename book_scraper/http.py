@@ -4,6 +4,7 @@ import hashlib
 import logging
 import os
 import random
+import re
 import time
 import urllib.robotparser
 from pathlib import Path
@@ -31,7 +32,7 @@ class PoliteClient:
                  long_pause_every=(20, 40), long_pause=(30, 90),
                  max_retries=4, block_limit=3, proxies=None,
                  cache_dir="cache", respect_robots=True, timeout=30,
-                 ignore_robots_domains=None):
+                 ignore_robots_domains=None, fail_fast_403_domains=None):
         self.min_delay, self.max_delay = min_delay, max_delay
         self.domain_delays = domain_delays or {}   # {"goodreads.com": (6, 18)}
         self.long_pause_every, self.long_pause = long_pause_every, long_pause
@@ -44,6 +45,9 @@ class PoliteClient:
         self.scrapfly_cost_budget = os.environ.get("SCRAPFLY_COST_BUDGET", "").strip()
         self.ignore_robots_domains = {
             d.lower().removeprefix("www.") for d in (ignore_robots_domains or [])
+        }
+        self.fail_fast_403_domains = {
+            d.lower().removeprefix("www.") for d in (fail_fast_403_domains or [])
         }
 
         self._sessions, self._last_req, self._count = {}, {}, {}
@@ -203,9 +207,24 @@ class PoliteClient:
                 return text
             if status in (404, 410):
                 return None
+            if status == 403 and domain in self.fail_fast_403_domains:
+                self._blocks[domain] = self.block_limit
+                log.error("[%s] acces refuzat (403); opresc fără retry. Verifică mai târziu sau folosește o sursă autorizată.", domain)
+                raise BlockedError(f"{domain}: acces refuzat (403)")
             if status in (403, 429) or captcha:
                 self._blocks[domain] = self._blocks.get(domain, 0) + 1
-                log.warning("[%s] blocat/limitat (%s) pe %s", domain, status, url)
+                details = []
+                for header in ("Server", "Via", "Retry-After", "X-Amzn-Waf-Action", "CF-Ray"):
+                    value = resp.headers.get(header)
+                    if value:
+                        details.append(f"{header}={value}")
+                title_match = re.search(r"<title[^>]*>(.*?)</title>", text, re.IGNORECASE | re.DOTALL)
+                if title_match:
+                    title = re.sub(r"\s+", " ", title_match.group(1)).strip()[:160]
+                    if title:
+                        details.append(f"title={title!r}")
+                suffix = f" ({'; '.join(details)})" if details else ""
+                log.warning("[%s] blocat/limitat (%s) pe %s%s", domain, status, url, suffix)
                 if self._blocks[domain] >= self.block_limit:
                     raise BlockedError(f"{domain}: {self._blocks[domain]} blocaje consecutive")
             else:
