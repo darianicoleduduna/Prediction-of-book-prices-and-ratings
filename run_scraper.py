@@ -31,9 +31,13 @@ def load_proxies(path):
 
 
 def build_client(args):
+    domain_delays = {
+        s.base.split("//")[1].replace("www.", ""): s.delay for s in SITES.values()
+    }
+    domain_delays["goodreads.com"] = (args.gr_min_delay, args.gr_max_delay)
     return PoliteClient(
         min_delay=args.min_delay, max_delay=args.max_delay,
-        domain_delays={s.base.split("//")[1].replace("www.", ""): s.delay for s in SITES.values()},
+        domain_delays=domain_delays,
         proxies=load_proxies(args.proxies), cache_dir=args.cache,
         respect_robots=not args.ignore_robots,
         ignore_robots_domains={"goodreads.com"},
@@ -135,6 +139,14 @@ def is_libris_category_query(query):
     return query.startswith("/") or query.startswith("https://www.libris.ro/")
 
 
+def is_bookzone_category_query(query):
+    return query.startswith("/carti/") or query.startswith(SITES["bookzone"].base + "/carti/")
+
+
+def is_elefant_category_query(query):
+    return query.startswith("/list/carti/") or query.startswith(SITES["elefant"].base + "/list/carti/")
+
+
 def duplicate_keys(row):
     """Return identity-and-price keys for a Book or CSV row."""
     def value(name):
@@ -192,6 +204,28 @@ def book_dedupe_identity(row):
             norm(value("coperta")), norm(value("limba")))
 
 
+_BUNDLE_TITLE_PATTERNS = (
+    r"\bpachet\w*\b",
+    r"\b(?:box\s*set|boxed\s*set|boxset|bundle)\b",
+    r"\bset\s+complet\b",
+    r"\bset(?:ul)?\s+(?:de\s+)?carti\b",
+    r"\b(?:seria|serie|colectia|colectie)\s+completa\b",
+    r"\b(?:seria|serie|colectia|colectie)\s+integrala\b",
+    r"\b(?:complete|full)\s+(?:series|collection|set)\b",
+    r"\btoate\s+(?:cele\s+)?volumele\b",
+    r"\bvolumele\s+\d+\s*[-–]\s*\d+\b",
+    r"\bvol(?:um)?\.?\s*\d+\s*[-–]\s*\d+\b",
+    r"\btrilogia\s+completa\b",
+    r"^seria\b",
+)
+
+
+def is_book_bundle(title):
+    """Exclude package/full-series listings while keeping individual series volumes."""
+    title = norm(title)
+    return any(re.search(pattern, title) for pattern in _BUNDLE_TITLE_PATTERNS)
+
+
 def main(default_sites=None, default_out="data/books.csv", default_queries=None,
          default_no_goodreads=False, default_pages=2, default_limit=200,
          default_per_category_limit=0):
@@ -200,6 +234,10 @@ def main(default_sites=None, default_out="data/books.csv", default_queries=None,
     ap.add_argument("--no-goodreads", action="store_true", default=default_no_goodreads,
                     help="nu completa rating/keywords din Goodreads")
     ap.add_argument("--gr-min-match", type=float, default=0.6, help="similaritate minima titlu (0-1)")
+    ap.add_argument("--gr-min-delay", type=float, default=60.0,
+                    help="pauza minimă între cereri Goodreads, în secunde")
+    ap.add_argument("--gr-max-delay", type=float, default=120.0,
+                    help="pauza maximă între cereri Goodreads, în secunde")
     ap.add_argument("--queries", nargs="+", default=default_queries or
                     ["fantasy", "romance", "thriller", "sf", "istorie"])
     ap.add_argument("--pages", type=int, default=default_pages,
@@ -241,6 +279,7 @@ def main(default_sites=None, default_out="data/books.csv", default_queries=None,
                         seen_elefant_books.add(identity)
     new_file = not out.exists() or out.stat().st_size == 0
     manual = [l.strip() for l in Path(args.urls_file).read_text().splitlines() if l.strip()] if args.urls_file else []
+    goodreads_blocked = False
 
     with out.open("a", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
@@ -283,8 +322,20 @@ def main(default_sites=None, default_out="data/books.csv", default_queries=None,
                     book = parse_product(html, url, site.name, site.platform,
                                          site.default_lang, site.genres_selector, site.price_selector)
                     if book:
+                        if name in {"bookzone", "elefant"} and is_book_bundle(book.titlu):
+                            log.info("[%s] exclud pachet/serie completă: %s", name, book.titlu)
+                            continue
                         if category:
                             book.gen = category
+                        if name in {"bookzone", "elefant"}:
+                            # Goodreads-only fields must never fall back to store metadata.
+                            book.original_title = ""
+                            book.rating = None
+                            book.nr_ratinguri = None
+                            book.goodreads_url = ""
+                            book.goodreads_match = None
+                            book.serie = ""
+                            book.keywords = []
                         identity = book_identity(book) if name == "bookzone" else None
                         elefant_identity = book_dedupe_identity(book) if name == "elefant" else None
                         if identity and identity in seen_bookzone_books:
@@ -293,15 +344,23 @@ def main(default_sites=None, default_out="data/books.csv", default_queries=None,
                         if elefant_identity and elefant_identity in seen_elefant_books:
                             log.info("[%s] duplicat în altă categorie, ignor: %s", name, book.titlu)
                             continue
-                        if not args.no_goodreads and name != "goodreads":
-                            ok = enrich_from_goodreads(client, book, args.gr_min_match)
+                        if not args.no_goodreads and name != "goodreads" and not goodreads_blocked:
+                            ok = enrich_from_goodreads(
+                                client, book, args.gr_min_match,
+                                use_goodreads_series=name in {"bookzone", "elefant"},
+                            )
                             if not ok:
                                 log.info("[%s] fara potrivire pe Goodreads: %s", name, book.titlu)
                             elif book.rating is None or book.nr_ratinguri is None:
                                 log.info("[%s] Goodreads fara rating/evaluari; pastrez cartea: %s",
                                          name, book.titlu)
+                            if client._blocks.get("goodreads.com", 0) >= client.block_limit:
+                                goodreads_blocked = True
+                                log.warning("Goodreads a blocat/limitat accesul; continui colectarea fără alte lookup-uri Goodreads.")
                             regular_queries = [q for q in args.queries
-                                               if not (name == "libris" and is_libris_category_query(q))]
+                                               if not (name == "libris" and is_libris_category_query(q))
+                                               and not (name == "bookzone" and is_bookzone_category_query(q))
+                                               and not (name == "elefant" and is_elefant_category_query(q))]
                             if (ok and book.rating is not None and book.nr_ratinguri is not None
                                     and not args.urls_file and regular_queries and not any(
                                         matches_goodreads_query(book, query) for query in regular_queries)):

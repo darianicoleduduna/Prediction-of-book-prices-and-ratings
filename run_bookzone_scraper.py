@@ -18,6 +18,6 @@ BOOKZONE_CATEGORIES = [
 
 
 if __name__ == "__main__":
-    main(default_sites=["bookzone"], default_out="data/date_bookzone.csv",
-         default_queries=BOOKZONE_CATEGORIES, default_no_goodreads=True,
+    main(default_sites=["bookzone"], default_out="data/carti_bookzone.csv",
+         default_queries=BOOKZONE_CATEGORIES, default_no_goodreads=False,
          default_pages=0, default_limit=0, default_per_category_limit=300)

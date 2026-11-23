@@ -157,7 +157,7 @@ class PoliteClient:
         return html
 
     # ---------- API ----------
-    def get(self, url, use_cache=True):
+    def get(self, url, use_cache=True, _goodreads_cooldown_retry=True):
         """Returneaza HTML (str) sau None (404 / interzis de robots)."""
         cp = self._cache_path(url)
         if use_cache and cp.exists():
@@ -196,6 +196,12 @@ class PoliteClient:
                         self._last_url[domain] = url
                         cp.write_text(html, encoding="utf-8")
                         return html
+                if domain == "goodreads.com" and _goodreads_cooldown_retry:
+                    log.warning("[%s] pauză 180s după WAF, apoi reîncerc o singură dată aceeași cerere", domain)
+                    time.sleep(180)
+                    self._blocks[domain] = 0
+                    return self.get(url, use_cache=use_cache,
+                                    _goodreads_cooldown_retry=False)
                 self._blocks[domain] = self.block_limit
                 log.warning("[%s] opresc cererile dupa WAF challenge", domain)
                 raise BlockedError(f"{domain}: WAF challenge")
@@ -226,6 +232,12 @@ class PoliteClient:
                 suffix = f" ({'; '.join(details)})" if details else ""
                 log.warning("[%s] blocat/limitat (%s) pe %s%s", domain, status, url, suffix)
                 if self._blocks[domain] >= self.block_limit:
+                    if domain == "goodreads.com" and _goodreads_cooldown_retry:
+                        log.warning("[%s] pauză 180s după blocaje repetate, apoi reîncerc o singură dată aceeași cerere", domain)
+                        time.sleep(180)
+                        self._blocks[domain] = 0
+                        return self.get(url, use_cache=use_cache,
+                                        _goodreads_cooldown_retry=False)
                     raise BlockedError(f"{domain}: {self._blocks[domain]} blocaje consecutive")
             else:
                 detail = f", x-amzn-waf-action={waf_action}" if waf_action else ""

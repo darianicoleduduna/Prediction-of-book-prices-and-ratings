@@ -35,7 +35,7 @@ SITES = {
                     price_selector=".product-price .current-price, .current-price"),
     "bookzone": Site("bookzone", "https://bookzone.ro",
                      "https://bookzone.ro/carti/{q}?pagina={page}",
-                     "online", "romana", r"^/carte/[^/]+/?$"),
+                     "online & fizic", "romana", r"^/carte/[^/]+/?$"),
     "goodreads": Site("goodreads", "https://www.goodreads.com",
                       "https://www.goodreads.com/search?q={q}&page={page}",
                       "", "", r"^/book/show/\d+",

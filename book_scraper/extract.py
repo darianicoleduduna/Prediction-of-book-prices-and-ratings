@@ -15,6 +15,7 @@ class Book:
     url: str = ""
     sursa: str = ""
     titlu: str = ""
+    original_title: str = ""
     autor: str = ""
     editura: str = ""
     an_aparitie: Optional[int] = None
@@ -56,6 +57,7 @@ LABELS = {
     "limba": ["limba", "limba originala", "language"],
     "coperta": ["coperta", "tip coperta", "legatura", "tip legatura", "format", "binding"],
     "serie": ["serie", "seria", "colectie", "colectia", "series"],
+    "original_title": ["original title", "titlu original"],
     "gen": ["gen", "gen literar", "categorie", "categorii", "genre"],
     "isbn": ["isbn", "ean", "cod isbn"],
     "editie": ["editie", "tip editie", "edition"],
@@ -94,6 +96,23 @@ def _jsonld_nodes(soup):
         except (ValueError, TypeError):
             continue
     return out
+
+
+def _goodreads_original_title(soup):
+    """Read Goodreads' originalTitle from its hydrated page JSON."""
+    pattern = re.compile(r'"originalTitle"\s*:\s*("(?:\\.|[^"\\])*")')
+    for script in soup.find_all("script"):
+        raw = script.string or script.get_text()
+        match = pattern.search(raw or "")
+        if not match:
+            continue
+        try:
+            value = json.loads(match.group(1)).strip()
+        except (ValueError, TypeError):
+            continue
+        if value:
+            return value
+    return ""
 
 
 def _types(n):
@@ -225,6 +244,11 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
     h1 = soup.find("h1")
     b.titlu = (prod.get("name") or (h1.get_text(strip=True) if h1 else "")
                or (og["content"] if og and og.get("content") else "")).strip()
+    b.original_title = (
+        _name(prod.get("originalTitle") or prod.get("alternativeHeadline") or prod.get("alternateName"))
+        or spec.get("original_title", "")
+        or (_goodreads_original_title(soup) if source == "goodreads" else "")
+    ) if source == "goodreads" else ""
     b.autor = _name(prod.get("author")) or spec.get("autor", "")
     pub = prod.get("publisher") or prod.get("brand")
     b.editura = _name(pub) or spec.get("editura", "")
@@ -232,6 +256,8 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
     b.nr_pagini = to_int(prod.get("numberOfPages")) or to_int(spec.get("pagini"))
 
     date = str(prod.get("datePublished") or spec.get("an") or "")
+    # Elefant formats recent years as e.g. "2.026" in its specifications.
+    date = re.sub(r"(?<=\d)[.,](?=\d{3}(?:\D|$))", "", date)
     m = re.search(r"\b(1[5-9]\d{2}|20\d{2})\b", date)
     b.an_aparitie = int(m.group(1)) if m else None
 
@@ -291,6 +317,12 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
         m = re.search(r"\(([^()]+?),?\s*#\s*[\d.]+\)", b.titlu) or \
             re.search(r"\b[Ss]eria\s+([A-ZĂÂÎȘȚ][^.,;()\n]{2,50})", desc)
         b.serie = m.group(1).strip() if m else ""
+    if source == "goodreads":
+        series_link = soup.select_one('a[href*="/series/"]')
+        if series_link:
+            series_name = series_link.get_text(" ", strip=True)
+            if series_name and norm(series_name) != "series":
+                b.serie = series_name
 
     crumbs = _breadcrumbs(soup, nodes, b.titlu)
     gen_list = []
@@ -303,7 +335,11 @@ def parse_product(html, url, source, default_platform="", default_lang="", genre
     b.subgen = gen_list[1] if len(gen_list) > 1 else ""
 
     b.editie = detect_edition(b.titlu, spec.get("editie", ""), desc[:600])
-    b.keywords = sorted(set(find_tropes(f"{b.titlu} {desc}")) | {norm(g) for g in gen_list})
+    if source == "goodreads":
+        # Preserve the order shown by Goodreads' genre/tag list.
+        b.keywords = list(dict.fromkeys(norm(g) for g in gen_list if norm(g)))[:20]
+    else:
+        b.keywords = sorted(set(find_tropes(f"{b.titlu} {desc}")) | {norm(g) for g in gen_list})
 
     is_bookzone_product = source == "bookzone" and re.search(r"/carte/[^/]+", urlsplit(url).path)
     if not b.titlu or not (prod or b.pret or b.nr_pagini or is_bookzone_product):

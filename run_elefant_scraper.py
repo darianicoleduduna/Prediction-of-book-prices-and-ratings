@@ -30,5 +30,5 @@ ELEFANT_CATEGORIES = [
 
 if __name__ == "__main__":
     main(default_sites=["elefant"], default_out="data/date_elefant.csv",
-         default_queries=ELEFANT_CATEGORIES, default_no_goodreads=True,
+         default_queries=ELEFANT_CATEGORIES, default_no_goodreads=False,
          default_pages=0, default_limit=0, default_per_category_limit=100)
