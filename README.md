@@ -16,6 +16,12 @@ Pentru Elefant, `python run_elefant_scraper.py` parcurge implicit cele 17 catego
 configurate, până la 100 de cărți unice per categorie, exclude pachetele/seriile complete,
 adaugă metadatele Goodreads când există potriviri și scrie în `data/date_elefant.csv`.
 
+Pentru Libris, `python run_libris_scraper.py` parcurge paginile categoriilor configurate în
+`run_libris_scraper.py`, până la 100 de cărți noi per categorie, și scrie în
+`data/date_libris.csv`. Încearcă să completeze ratingul, numărul de evaluări, seria și
+keywords din Goodreads. Poți schimba lista din `LIBRIS_CATEGORIES` sau limita cu
+`--per-category-limit`; `0` înseamnă fără limită.
+
 Protectii: delay aleator per domeniu (3-9s, goodreads 6-18s), pauze lungi la 20-40 cereri,
 backoff exponential + Retry-After, robots.txt, cache pe disc (reluare fara recerere),
 stop dupa 3 blocaje (403/429/captcha), rotatie UA/proxy (proxies.txt, optional).
