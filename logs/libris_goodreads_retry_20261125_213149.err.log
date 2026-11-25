@@ -1,0 +1,6 @@
+2026-11-25 21:31:50,028 INFO Rânduri Libris fãrã rating sau original title: 1646; fi\u0219ier: data\date_libris.csv
+2026-11-25 21:31:50,030 WARNING Goodreads este în cooldown; urmãtoarea probã pentru «Supernatural: John Winchester Hardcover Ruled Journal» în 33 secunde
+2026-11-25 21:32:31,652 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/search?q=supernatural%3A+john+winchester+hardcover+ruled+journal+Insight+Editions&page=1
+2026-11-25 21:32:31,653 WARNING [goodreads.com] opresc cererile dupa WAF challenge
+2026-11-25 21:32:31,653 WARNING Goodreads: acces blocat; rândul trebuie reîncercat (goodreads.com: WAF challenge)
+2026-11-25 21:32:31,658 WARNING Goodreads încã respinge proba pentru «Supernatural: John Winchester Hardcover Ruled Journal»; încerc din nou peste 5 minute. Restul cãutãrilor rãmân în a\u0219teptare.

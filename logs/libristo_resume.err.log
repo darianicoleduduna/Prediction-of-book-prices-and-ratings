@@ -1,0 +1,525 @@
+2026-11-25 10:03:22,492 INFO Pornesc scraperul pentru: libristo; ie\u0219ire: data/date_libristo.csv
+2026-11-25 10:03:22,510 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy
+2026-11-25 10:03:22,557 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy'
+2026-11-25 10:03:22,602 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/science-fiction', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/science-fiction
+2026-11-25 10:03:22,654 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/science-fiction'
+2026-11-25 10:03:22,709 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/romance', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/romance
+2026-11-25 10:03:22,754 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/romance'
+2026-11-25 10:03:22,797 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/thriller-suspense-fiction', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/thriller-suspense-fiction
+2026-11-25 10:03:22,845 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/thriller-suspense-fiction'
+2026-11-25 10:03:22,888 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/horror-supernatural-fiction', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/horror-supernatural-fiction
+2026-11-25 10:03:22,962 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/horror-supernatural-fiction'
+2026-11-25 10:03:23,015 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/historical-fiction', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/historical-fiction
+2026-11-25 10:03:23,106 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/historical-fiction'
+2026-11-25 10:03:23,148 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction
+2026-11-25 10:03:23,199 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:23,240 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/lonesome-dove_11062810
+2026-11-25 10:03:23,951 INFO [libristo] duplicat la acelasi pret; ignor: Lonesome Dove
+2026-11-25 10:03:23,952 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 2: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=2
+2026-11-25 10:03:24,010 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:24,056 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 3: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=3
+2026-11-25 10:03:24,098 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:24,139 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 4: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=4
+2026-11-25 10:03:24,189 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:24,237 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 5: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=5
+2026-11-25 10:03:24,321 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:24,361 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/project-hail-mary-mti_49197915
+2026-11-25 10:03:24,850 INFO [libristo] duplicat la acelasi pret; ignor: Project Hail Mary
+2026-11-25 10:03:24,851 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 6: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=6
+2026-11-25 10:03:24,895 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:03:24,967 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/transformers-vol-1-tp_44523320
+2026-11-25 10:03:29,362 INFO [libristo] 1 cãr\u021bi adãugate: Transformers Vol. 1
+2026-11-25 10:03:29,363 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/blue-lock-8_42525090
+2026-11-25 10:03:37,276 INFO [libristo] 2 cãr\u021bi adãugate: Blue Lock 8
+2026-11-25 10:03:37,277 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/darth-plagueis-star-wars-legends_37356827
+2026-11-25 10:03:43,254 INFO [libristo] 3 cãr\u021bi adãugate: Darth Plagueis: Star Wars Legends
+2026-11-25 10:03:43,255 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/empire-of-gold_32963398
+2026-11-25 10:03:50,710 INFO [libristo] 4 cãr\u021bi adãugate: The Empire of Gold
+2026-11-25 10:03:50,710 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/dead-man-s-walk_46682814
+2026-11-25 10:03:58,713 INFO [libristo] 5 cãr\u021bi adãugate: Dead Man&#039;s Walk
+2026-11-25 10:03:58,714 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/secrets-of-the-silent-witch-vol-2_39476197
+2026-11-25 10:04:07,846 INFO [libristo] 6 cãr\u021bi adãugate: Secrets of the Silent Witch, Vol. 2
+2026-11-25 10:04:07,848 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gold-and-gossamer_49492303
+2026-11-25 10:04:13,586 INFO [libristo] 7 cãr\u021bi adãugate: Gold and Gossamer
+2026-11-25 10:04:13,587 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/overlord-vol-16-light-novel_43055075
+2026-11-25 10:04:19,959 INFO [libristo] 8 cãr\u021bi adãugate: Overlord, Vol. 16 (light novel)
+2026-11-25 10:04:19,959 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/booster-gold-comp-2007-series-bk01_44616680
+2026-11-25 10:04:26,180 INFO [libristo] 9 cãr\u021bi adãugate: BOOSTER GOLD COMP 2007 SERIES BK01
+2026-11-25 10:04:26,180 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/lout-of-count-s-family-novel-vol-6_48445323
+2026-11-25 10:04:34,409 INFO [libristo] 10 cãr\u021bi adãugate: Lout of Count's Family (Novel) Vol. 6
+2026-11-25 10:04:34,410 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 7: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=7
+2026-11-25 10:04:35,129 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:04:35,281 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/horde-of-the-counterwind_51298422
+2026-11-25 10:04:41,530 INFO [libristo] 11 cãr\u021bi adãugate: Horde of the Counterwind
+2026-11-25 10:04:41,530 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shipping-man_01338212
+2026-11-25 10:04:49,606 INFO [libristo] 12 cãr\u021bi adãugate: Shipping Man
+2026-11-25 10:04:49,606 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/morning-star_10983148
+2026-11-25 10:04:57,458 INFO [libristo] duplicat la acelasi pret; ignor: Morning Star
+2026-11-25 10:04:57,458 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/harrow-the-ninth_32770957
+2026-11-25 10:05:05,915 INFO [libristo] 13 cãr\u021bi adãugate: Harrow the Ninth
+2026-11-25 10:05:05,917 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shadows-upon-time_50070777
+2026-11-25 10:05:12,392 INFO [libristo] 14 cãr\u021bi adãugate: Shadows Upon Time
+2026-11-25 10:05:12,392 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/streets-of-laredo_46682815
+2026-11-25 10:05:19,031 INFO [libristo] 15 cãr\u021bi adãugate: Streets of Laredo
+2026-11-25 10:05:19,033 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/tokyo-revengers-omnibus-vol-23-24_45273002
+2026-11-25 10:05:26,050 INFO [libristo] 16 cãr\u021bi adãugate: Tokyo Revengers (Omnibus) Vol. 23-24
+2026-11-25 10:05:26,051 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/overlord-vol-15-light-novel_42196803
+2026-11-25 10:05:33,929 INFO [libristo] 17 cãr\u021bi adãugate: Overlord, Vol. 15 (light novel)
+2026-11-25 10:05:33,929 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/brave-new-world_48899111
+2026-11-25 10:05:41,525 INFO [libristo] 18 cãr\u021bi adãugate: Brave New World
+2026-11-25 10:05:41,525 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/tusk-love_49685793
+2026-11-25 10:05:47,355 INFO [libristo] 19 cãr\u021bi adãugate: Tusk Love
+2026-11-25 10:05:47,355 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/this-kingdom-will-not-kill-me_48942825
+2026-11-25 10:05:52,472 INFO [libristo] 20 cãr\u021bi adãugate: This Kingdom Will Not Kill Me
+2026-11-25 10:05:52,472 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/sentenced-to-be-a-hero-v04-ln_46540935
+2026-11-25 10:05:59,461 INFO [libristo] 21 cãr\u021bi adãugate: SENTENCED TO BE A HERO V04 {LN}
+2026-11-25 10:05:59,462 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/moby-dick_50897915
+2026-11-25 10:06:10,215 INFO [libristo] 22 cãr\u021bi adãugate: Moby-Dick
+2026-11-25 10:06:10,215 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/re-zero-starting-life-in-another-world-short-story-collection-vol-6-light-novel_52569020
+2026-11-25 10:06:14,947 INFO [libristo] 23 cãr\u021bi adãugate: RE: Zero -Starting Life in Another World- Short Story Collection, Vol. 6 (Light Novel)
+2026-11-25 10:06:14,947 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/mass-effect_10982874
+2026-11-25 10:06:16,429 INFO [libristo.ro] pauza lunga 95s
+2026-11-25 10:07:52,445 INFO [libristo] 24 cãr\u021bi adãugate: Mass Effect: Retribution
+2026-11-25 10:07:52,445 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/nightingale_14490553
+2026-11-25 10:07:53,192 INFO [libristo] 25 cãr\u021bi adãugate: The Nightingale
+2026-11-25 10:07:53,193 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/re-zero-starting-life-in-another-world-vol-15-light-novel_32927211
+2026-11-25 10:07:53,683 INFO [libristo] 26 cãr\u021bi adãugate: Re:ZERO -Starting Life in Another World-, Vol. 15 (light novel)
+2026-11-25 10:07:53,685 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/re-zero-starting-life-in-another-world-ex-vol-6-light-novel_49789433
+2026-11-25 10:07:54,033 INFO [libristo] 27 cãr\u021bi adãugate: RE: Zero -Starting Life in Another World- Ex, Vol. 6 (Light Novel)
+2026-11-25 10:07:54,034 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/blood-ties-world-of-warcraft-midnight_49080396
+2026-11-25 10:07:54,636 INFO [libristo] 28 cãr\u021bi adãugate: Blood Ties (World of Warcraft: Midnight)
+2026-11-25 10:07:54,638 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction', pagina 8: https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction?page=8
+2026-11-25 10:07:54,704 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/adventure-fiction'
+2026-11-25 10:07:54,752 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/overlord-vol-5_15769273
+2026-11-25 10:08:02,572 INFO [libristo] 29 cãr\u021bi adãugate: Overlord, Vol. 5
+2026-11-25 10:08:02,572 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/adventures-of-tom-bombadil_44778687
+2026-11-25 10:08:07,154 INFO [goodreads.com] pauza lunga 81s
+2026-11-25 10:09:30,042 INFO [libristo] 30 cãr\u021bi adãugate: Adventures of Tom Bombadil
+2026-11-25 10:09:30,042 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-wolf-queen_51418872
+2026-11-25 10:09:30,468 INFO [libristo] 31 cãr\u021bi adãugate: The Wolf Queen
+2026-11-25 10:09:30,469 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-game-of-thrones-5-vols_01380343
+2026-11-25 10:09:31,251 INFO [libristo] 32 cãr\u021bi adãugate: George R. R. Martin's A Game of Thrones 5-Book Boxed Set (Song of Ice and Fire  Series)
+2026-11-25 10:09:31,251 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/world-of-warcraft-stormrage_01250894
+2026-11-25 10:09:31,906 INFO [libristo] 33 cãr\u021bi adãugate: World of Warcraft: Stormrage
+2026-11-25 10:09:31,907 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/sailor-moon-1-naoko-takeuchi-collection_33467940
+2026-11-25 10:09:32,501 INFO [libristo] 34 cãr\u021bi adãugate: Sailor Moon 1
+2026-11-25 10:09:32,501 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/noragami-omnibus-2-vol-4-6-stray-god_38712280
+2026-11-25 10:09:32,929 INFO [libristo] 35 cãr\u021bi adãugate: Noragami Omnibus 2 (Vol. 4-6)
+2026-11-25 10:09:32,930 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/see-you-soon_45273506
+2026-11-25 10:09:33,502 INFO [libristo] 36 cãr\u021bi adãugate: See You Soon
+2026-11-25 10:09:33,502 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/world-of-warcraft-exploring-azeroth-kalimdor_35461385
+2026-11-25 10:09:39,732 INFO [libristo] 37 cãr\u021bi adãugate: World of Warcraft: Exploring Azeroth: Kalimdor
+2026-11-25 10:09:39,733 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/mass-effect-andromeda-the-lost-ark_15729298
+2026-11-25 10:09:47,165 INFO [libristo] 38 cãr\u021bi adãugate: Mass Effect (TM)
+2026-11-25 10:09:47,165 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-sword-of-rome_52868253
+2026-11-25 10:10:07,960 INFO [libristo] 39 cãr\u021bi adãugate: The Sword of Rome
+2026-11-25 10:10:07,961 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/red-rising_10983146
+2026-11-25 10:10:15,236 INFO [libristo] duplicat la acelasi pret; ignor: Red Rising
+2026-11-25 10:10:15,237 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fire-blood_25520614
+2026-11-25 10:10:22,048 INFO [libristo] 40 cãr\u021bi adãugate: Fire & Blood
+2026-11-25 10:10:22,049 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 1: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance
+2026-11-25 10:10:22,423 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:10:22,511 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/iron-flame_43368987
+2026-11-25 10:10:23,490 INFO [libristo] duplicat la acelasi pret; ignor: Iron Flame
+2026-11-25 10:10:23,490 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 2: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=2
+2026-11-25 10:10:27,644 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:10:27,738 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/crescent-city-paperback-box-set_49297401
+2026-11-25 10:10:28,360 INFO [libristo] duplicat la acelasi pret; ignor: Crescent City Paperback Box Set
+2026-11-25 10:10:28,360 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/onyx-storm_45317796
+2026-11-25 10:10:36,922 INFO [libristo] duplicat la acelasi pret; ignor: Onyx Storm
+2026-11-25 10:10:36,923 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 3: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=3
+2026-11-25 10:10:38,648 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:10:38,707 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-court-of-thorns-and-roses-6_51665134
+2026-11-25 10:10:49,183 INFO [libristo] 41 cãr\u021bi adãugate: A Court of Thorns and Roses 6
+2026-11-25 10:10:49,185 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-7-heartless-sky_46686981
+2026-11-25 10:10:58,491 INFO [libristo] 42 cãr\u021bi adãugate: Zodiac Academy 7: Heartless Sky
+2026-11-25 10:10:58,491 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-sweetest-fiend-deluxe-limited-edition_51411444
+2026-11-25 10:11:07,514 INFO [libristo] 43 cãr\u021bi adãugate: The Sweetest Fiend (Deluxe Limited Edition)
+2026-11-25 10:11:07,516 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/adversary-to-the-villain_50023243
+2026-11-25 10:11:15,197 INFO [libristo] 44 cãr\u021bi adãugate: Adversary to the Villain
+2026-11-25 10:11:15,199 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-6-fated-throne_46686980
+2026-11-25 10:11:25,193 INFO [libristo] 45 cãr\u021bi adãugate: Zodiac Academy 6: Fated Throne
+2026-11-25 10:11:25,193 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/bk-of-azrael-dlx_48444030
+2026-11-25 10:11:32,409 INFO [libristo] 46 cãr\u021bi adãugate: The Book of Azrael: Deluxe Limited Edition
+2026-11-25 10:11:32,410 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/ascended_51382860
+2026-11-25 10:11:39,304 INFO [libristo] 47 cãr\u021bi adãugate: The Ascended
+2026-11-25 10:11:39,306 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/reap-sow_50917977
+2026-11-25 10:11:46,069 INFO [libristo] 48 cãr\u021bi adãugate: Reap &amp; Sow
+2026-11-25 10:11:46,069 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 4: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=4
+2026-11-25 10:11:47,422 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:11:47,473 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-5-cursed-fates_46686979
+2026-11-25 10:11:56,388 INFO [libristo] 49 cãr\u021bi adãugate: Zodiac Academy 5: Cursed Fates
+2026-11-25 10:11:56,388 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-sorrow-and-starlight_46110690
+2026-11-25 10:12:03,598 INFO [libristo] 50 cãr\u021bi adãugate: Zodiac Academy 8: Sorrow and Starlight
+2026-11-25 10:12:03,599 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-4-shadow-princess_46673568
+2026-11-25 10:12:11,506 INFO [libristo] 51 cãr\u021bi adãugate: ZODIAC ACADEMY 4 SHADOW PRINCESS
+2026-11-25 10:12:11,506 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/starside_49739512
+2026-11-25 10:12:19,633 INFO [libristo] 52 cãr\u021bi adãugate: Starside
+2026-11-25 10:12:19,634 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/alchemised_47205469
+2026-11-25 10:12:27,095 INFO [libristo] 53 cãr\u021bi adãugate: Alchemised
+2026-11-25 10:12:27,096 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/between-tides-thunder_52906109
+2026-11-25 10:12:27,097 INFO [libristo.ro] pauza lunga 74s
+2026-11-25 10:13:42,262 INFO [libristo] 54 cãr\u021bi adãugate: Between Tides & Thunder
+2026-11-25 10:13:42,262 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-wrath-gods-reap_49684840
+2026-11-25 10:13:42,825 INFO [libristo] 55 cãr\u021bi adãugate: The Wrath Gods Reap
+2026-11-25 10:13:42,825 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-court-of-thorns-and-roses-hardcover-box-set_53008165
+2026-11-25 10:13:43,034 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: A Court of Thorns and Roses Hardcover Box Set
+2026-11-25 10:13:43,034 INFO [libristo] 56 cãr\u021bi adãugate: A Court of Thorns and Roses Hardcover Box Set
+2026-11-25 10:13:43,034 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-restless-stars_46110691
+2026-11-25 10:13:43,770 INFO [libristo] 57 cãr\u021bi adãugate: Zodiac Academy: Restless Stars
+2026-11-25 10:13:43,770 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/kings-rising_02917322
+2026-11-25 10:13:44,668 INFO [libristo] 58 cãr\u021bi adãugate: Kings Rising
+2026-11-25 10:13:44,668 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-silversmith_49667331
+2026-11-25 10:13:45,408 INFO [libristo] 59 cãr\u021bi adãugate: The Silversmith
+2026-11-25 10:13:45,408 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/throne-of-broken-gods-dlx-special-ed_49893634
+2026-11-25 10:13:46,234 INFO [libristo] 60 cãr\u021bi adãugate: The Throne of Broken Gods: Deluxe Special Edition
+2026-11-25 10:13:46,235 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/crown-of-midnight_41392936
+2026-11-25 10:13:47,115 INFO [libristo] 61 cãr\u021bi adãugate: Crown of Midnight
+2026-11-25 10:13:47,116 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/tog-throne-of-glass-tog_38749775
+2026-11-25 10:13:48,023 INFO [libristo] 62 cãr\u021bi adãugate: Throne of Glass
+2026-11-25 10:13:48,024 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/heir-of-fire_41392937
+2026-11-25 10:13:48,851 INFO [libristo] 63 cãr\u021bi adãugate: Heir of Fire
+2026-11-25 10:13:48,852 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gods-monsters-book-4_46480871
+2026-11-25 10:13:51,725 INFO [libristo] 64 cãr\u021bi adãugate: The Wrath of the Fallen
+2026-11-25 10:13:51,725 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fae-alchemy-2_47241921
+2026-11-25 10:13:59,999 INFO [libristo] 65 cãr\u021bi adãugate: Brimstone
+2026-11-25 10:13:59,999 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/onyx-storm_45317797
+2026-11-25 10:14:05,973 INFO [goodreads.com] pauza lunga 119s
+2026-11-25 10:16:07,442 INFO [libristo] duplicat la acelasi pret; ignor: Onyx Storm
+2026-11-25 10:16:07,443 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/phantasma_46442844
+2026-11-25 10:16:08,205 INFO [libristo] 66 cãr\u021bi adãugate: Phantasma
+2026-11-25 10:16:08,205 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 5: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=5
+2026-11-25 10:16:08,275 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:16:08,332 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/throne-of-broken-gods_44437431
+2026-11-25 10:16:09,194 INFO [libristo] 67 cãr\u021bi adãugate: Throne of Broken Gods
+2026-11-25 10:16:09,194 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/weavingshaw_49675643
+2026-11-25 10:16:09,945 INFO [libristo] 68 cãr\u021bi adãugate: Weavingshaw
+2026-11-25 10:16:09,946 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-fall-of-the-crowned-king_51969604
+2026-11-25 10:16:12,956 INFO [libristo] 69 cãr\u021bi adãugate: The Fall of the Crowned King
+2026-11-25 10:16:12,958 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-night-prince_49474881
+2026-11-25 10:16:13,570 INFO [libristo] 70 cãr\u021bi adãugate: The Night Prince (Deluxe Edition)
+2026-11-25 10:16:13,570 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/exquisite-torment-of-loving-your-enemy_49220064
+2026-11-25 10:16:14,362 INFO [libristo] 71 cãr\u021bi adãugate: Exquisite Torment of Loving Your Enemy
+2026-11-25 10:16:14,363 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/one-dark-window_48161449
+2026-11-25 10:16:20,056 INFO [libristo] duplicat la acelasi pret; ignor: One Dark Window
+2026-11-25 10:16:20,058 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/enchantra_46504994
+2026-11-25 10:16:26,550 INFO [libristo] 72 cãr\u021bi adãugate: Enchantra
+2026-11-25 10:16:26,551 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/with-hearts-of-flame_51477150
+2026-11-25 10:16:56,595 INFO [libristo] 73 cãr\u021bi adãugate: With Hearts of Flame
+2026-11-25 10:16:56,596 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/house-of-sky-and-breath_42133762
+2026-11-25 10:17:04,570 INFO [libristo] 74 cãr\u021bi adãugate: House of Sky and Breath
+2026-11-25 10:17:04,571 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/night-prince_50038952
+2026-11-25 10:17:13,274 INFO [libristo] 75 cãr\u021bi adãugate: The Night Prince
+2026-11-25 10:17:13,275 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/two-twisted-crowns_48161450
+2026-11-25 10:17:20,963 INFO [libristo] 76 cãr\u021bi adãugate: Two Twisted Crowns
+2026-11-25 10:17:20,964 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shadow-and-son_50920424
+2026-11-25 10:17:27,829 INFO [libristo] 77 cãr\u021bi adãugate: Shadow and Son
+2026-11-25 10:17:27,829 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/house-of-earth-and-blood_42616172
+2026-11-25 10:17:33,747 INFO [libristo] 78 cãr\u021bi adãugate: House of Earth and Blood
+2026-11-25 10:17:33,749 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/city-of-gods-and-monsters_49548661
+2026-11-25 10:17:40,098 INFO [libristo] 79 cãr\u021bi adãugate: City of Gods and Monsters
+2026-11-25 10:17:40,099 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gods-monsters-book-3_44720319
+2026-11-25 10:17:48,279 INFO [libristo] 80 cãr\u021bi adãugate: The Dawn of the Cursed Queen
+2026-11-25 10:17:48,280 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 6: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=6
+2026-11-25 10:17:48,655 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:17:48,723 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/stormside_52451549
+2026-11-25 10:17:57,751 INFO [libristo] 81 cãr\u021bi adãugate: Stormside
+2026-11-25 10:17:57,752 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fallen-stars-deluxe-edition_51662270
+2026-11-25 10:18:05,494 INFO [libristo] 82 cãr\u021bi adãugate: Fallen Stars Deluxe Edition
+2026-11-25 10:18:05,495 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fourth-wing_42599844
+2026-11-25 10:18:11,198 INFO [libristo] duplicat la acelasi pret; ignor: Fourth Wing
+2026-11-25 10:18:11,198 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-rebel-witch_48163190
+2026-11-25 10:18:19,296 INFO [libristo] 83 cãr\u021bi adãugate: The Rebel Witch
+2026-11-25 10:18:19,298 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/alchemised-english-edition_48302432
+2026-11-25 10:18:25,652 INFO [libristo] 84 cãr\u021bi adãugate: Alchemised English Edition
+2026-11-25 10:18:25,652 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/daggerbound_50168460
+2026-11-25 10:18:34,329 INFO [libristo] 85 cãr\u021bi adãugate: Daggerbound
+2026-11-25 10:18:34,329 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-bridge-kingdom_45733077
+2026-11-25 10:18:42,179 INFO [libristo] 86 cãr\u021bi adãugate: The Bridge Kingdom
+2026-11-25 10:18:42,180 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/for-whom-the-belle-tolls-deluxe-limited-edition_48295689
+2026-11-25 10:18:51,378 INFO [libristo] 87 cãr\u021bi adãugate: For Whom the Belle Tolls (Deluxe Limited Edition)
+2026-11-25 10:18:51,379 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/crescent-city-hardcover-box-set_45155491
+2026-11-25 10:18:58,481 INFO [libristo] 88 cãr\u021bi adãugate: Crescent City Hardcover Box Set
+2026-11-25 10:18:58,482 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/throne-of-glass_41370877
+2026-11-25 10:19:05,035 INFO [libristo] duplicat la acelasi pret; ignor: Throne of Glass
+2026-11-25 10:19:05,036 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-ascended_50275365
+2026-11-25 10:19:10,483 INFO [goodreads.com] pauza lunga 97s
+2026-11-25 10:20:47,482 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/isbn/9780241826935
+2026-11-25 10:20:47,483 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 10:25:48,015 INFO [libristo] 89 cãr\u021bi adãugate: The Ascended
+2026-11-25 10:25:48,015 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-wolf-king_53101128
+2026-11-25 10:25:48,644 INFO [libristo] 90 cãr\u021bi adãugate: The Wolf King
+2026-11-25 10:25:48,645 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-crown-of-gilded-bones-special-edition_49551931
+2026-11-25 10:25:49,600 INFO [libristo] 91 cãr\u021bi adãugate: The Crown of Gilded Bones Special Edition
+2026-11-25 10:25:49,601 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-fallen-and-the-kiss-of-dusk_49680083
+2026-11-25 10:25:50,501 INFO [libristo] 92 cãr\u021bi adãugate: The Fallen and the Kiss of Dusk
+2026-11-25 10:25:50,502 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/sorrow-strangers_51417531
+2026-11-25 10:25:51,223 INFO [libristo] 93 cãr\u021bi adãugate: Sorrow & Strangers
+2026-11-25 10:25:51,224 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-wretched-divine_50897468
+2026-11-25 10:25:51,889 INFO [libristo] 94 cãr\u021bi adãugate: The Wretched Divine
+2026-11-25 10:25:51,889 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/daughter-of-no-worlds_50249547
+2026-11-25 10:25:52,670 INFO [libristo] 95 cãr\u021bi adãugate: Daughter of No Worlds
+2026-11-25 10:25:52,671 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/vine-of-hearts-evermore2-ex-hb_52908821
+2026-11-25 10:25:53,920 INFO [libristo] fara potrivire pe Goodreads: VINE OF HEARTS_EVERMORE2 EX HB
+2026-11-25 10:25:53,922 INFO [libristo] 96 cãr\u021bi adãugate: VINE OF HEARTS_EVERMORE2 EX HB
+2026-11-25 10:25:53,922 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/quicksilver_48266655
+2026-11-25 10:26:01,518 INFO [libristo] 97 cãr\u021bi adãugate: Quicksilver
+2026-11-25 10:26:01,519 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 7: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=7
+2026-11-25 10:26:01,573 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:26:01,647 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/ashes-and-the-star-cursed-king_44628509
+2026-11-25 10:26:02,576 INFO [libristo] 98 cãr\u021bi adãugate: Ashes and the Star-Cursed King
+2026-11-25 10:26:02,577 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/zodiac-academy-beyond-the-veil_46110692
+2026-11-25 10:26:07,398 INFO [libristo] 99 cãr\u021bi adãugate: Zodiac Academy: Beyond the Veil
+2026-11-25 10:26:07,399 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/riftborne_50042203
+2026-11-25 10:26:29,229 INFO [libristo] 100 cãr\u021bi adãugate: Riftborne
+2026-11-25 10:26:29,230 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/web-of-vows-and-vengeance_51978052
+2026-11-25 10:26:35,460 INFO [libristo] 101 cãr\u021bi adãugate: Web of Vows and Vengeance
+2026-11-25 10:26:35,460 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gild_39142166
+2026-11-25 10:26:40,569 INFO [libristo] 102 cãr\u021bi adãugate: Gild
+2026-11-25 10:26:40,570 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/crown-of-midnight_41370879
+2026-11-25 10:26:46,877 INFO [libristo] duplicat la acelasi pret; ignor: Crown of Midnight
+2026-11-25 10:26:46,877 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/heir-of-fire_41370881
+2026-11-25 10:26:49,660 INFO [libristo.ro] pauza lunga 99s
+2026-11-25 10:28:29,649 INFO [libristo] 103 cãr\u021bi adãugate: Heir of Fire
+2026-11-25 10:28:29,649 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/queen-of-shadows_41370883
+2026-11-25 10:28:30,610 INFO [libristo] 104 cãr\u021bi adãugate: Queen of Shadows
+2026-11-25 10:28:30,610 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/mortdale_53806494
+2026-11-25 10:28:31,224 INFO [libristo] 105 cãr\u021bi adãugate: Mortdale
+2026-11-25 10:28:31,225 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shadow-and-son_50217900
+2026-11-25 10:28:31,944 INFO Goodreads: potrivire slaba (0.55) 'Shadow and Son' vs '(PRE-ORDER)(IN STORE PICK UP ONLY) Shadow and Son by Gretchen Powell Fox'
+2026-11-25 10:28:31,945 INFO [libristo] fara potrivire pe Goodreads: Shadow and Son
+2026-11-25 10:28:31,946 INFO [libristo] 106 cãr\u021bi adãugate: Shadow and Son
+2026-11-25 10:28:31,946 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/rites-of-the-starling_49740944
+2026-11-25 10:28:41,153 INFO [libristo] 107 cãr\u021bi adãugate: Rites of the Starling
+2026-11-25 10:28:41,153 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/blood-betrayals_50074362
+2026-11-25 10:28:49,761 INFO [libristo] 108 cãr\u021bi adãugate: Blood & Betrayals
+2026-11-25 10:28:49,761 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/house-in-the-cerulean-sea_36272908
+2026-11-25 10:28:56,337 INFO [libristo] 109 cãr\u021bi adãugate: House in the Cerulean Sea
+2026-11-25 10:28:56,338 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/smoke-and-scar_49898043
+2026-11-25 10:29:03,546 INFO [libristo] 110 cãr\u021bi adãugate: Smoke and Scar
+2026-11-25 10:29:03,546 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-red-winter_48866224
+2026-11-25 10:29:28,743 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/show/261645578
+2026-11-25 10:29:28,744 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 10:34:28,831 INFO Goodreads: potrivire slaba (0.58) 'The Red Winter' vs 'The Red Winter by Cameron Sullivan'
+2026-11-25 10:34:28,833 INFO [libristo] fara potrivire pe Goodreads: The Red Winter
+2026-11-25 10:34:28,833 INFO [libristo] 111 cãr\u021bi adãugate: The Red Winter
+2026-11-25 10:34:28,834 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/house-of-earth-and-blood_33033138
+2026-11-25 10:34:29,997 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/isbn/9781635577020
+2026-11-25 10:34:29,997 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 10:39:33,646 INFO [libristo] 112 cãr\u021bi adãugate: House of Earth and Blood
+2026-11-25 10:39:33,647 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/under-the-oak-tree-volume-4-the-novel_51412344
+2026-11-25 10:39:39,062 INFO [libristo] 113 cãr\u021bi adãugate: Under the Oak Tree: Volume 4 (The Novel)
+2026-11-25 10:39:39,064 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-court-of-thorns-and-roses-7_51949531
+2026-11-25 10:39:47,621 INFO [libristo] 114 cãr\u021bi adãugate: A Court of Thorns and Roses 7
+2026-11-25 10:39:47,622 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/evermore-2-deluxe-limited-edition_49234025
+2026-11-25 10:39:55,961 INFO [libristo] 115 cãr\u021bi adãugate: Evermore #2 (Deluxe Limited Edition)
+2026-11-25 10:39:55,961 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-bargain-so-bloody_49953034
+2026-11-25 10:39:58,516 INFO [goodreads.com] pauza lunga 87s
+2026-11-25 10:41:28,621 INFO [libristo] 116 cãr\u021bi adãugate: A Bargain So Bloody
+2026-11-25 10:41:28,622 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 8: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=8
+2026-11-25 10:41:28,675 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:41:28,759 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-war-of-two-queens-special-edition_49551932
+2026-11-25 10:41:29,765 INFO [libristo] 117 cãr\u021bi adãugate: The War of Two Queens Special Edition
+2026-11-25 10:41:29,765 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-traitor-queen_45733078
+2026-11-25 10:41:30,436 INFO [libristo] 118 cãr\u021bi adãugate: The Traitor Queen
+2026-11-25 10:41:30,437 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-knight-and-the-moth_45693200
+2026-11-25 10:41:31,285 INFO [libristo] duplicat la acelasi pret; ignor: The Knight and the Moth
+2026-11-25 10:41:31,286 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/vows-of-blood-and-deception_52837124
+2026-11-25 10:41:38,151 INFO [libristo] 119 cãr\u021bi adãugate: Vows of Blood and Deception
+2026-11-25 10:41:38,153 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/blood-of-truth-and-traitors_53902091
+2026-11-25 10:41:47,111 INFO [libristo] 120 cãr\u021bi adãugate: Blood of Truth and Traitors
+2026-11-25 10:41:47,112 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/under-the-oak-tree-vol-4-novel_51518871
+2026-11-25 10:41:53,387 INFO [libristo] 121 cãr\u021bi adãugate: Under the Oak Tree, Vol. 4 (novel)
+2026-11-25 10:41:53,388 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-souls-in-ruin_51413558
+2026-11-25 10:41:59,928 INFO [libristo] 122 cãr\u021bi adãugate: The Souls In Ruin
+2026-11-25 10:41:59,928 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/defy-the-dusk_51658818
+2026-11-25 10:42:05,300 INFO [libristo] 123 cãr\u021bi adãugate: Defy the Dusk
+2026-11-25 10:42:05,302 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/in-the-wake-of-the-ruined_51413603
+2026-11-25 10:42:27,441 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: In the Wake of the Ruined
+2026-11-25 10:42:27,442 INFO [libristo] 124 cãr\u021bi adãugate: In the Wake of the Ruined
+2026-11-25 10:42:27,443 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/mate_48146901
+2026-11-25 10:42:35,159 INFO [libristo] 125 cãr\u021bi adãugate: Mate
+2026-11-25 10:42:35,160 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/city-of-souls-and-sinners_49548663
+2026-11-25 10:42:40,749 INFO [libristo] 126 cãr\u021bi adãugate: City of Souls and Sinners
+2026-11-25 10:42:40,751 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/glint_39142168
+2026-11-25 10:42:47,743 INFO [libristo] 127 cãr\u021bi adãugate: Glint
+2026-11-25 10:42:47,745 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/glow-of-the-everflame_46880385
+2026-11-25 10:42:54,449 INFO [libristo] 128 cãr\u021bi adãugate: Glow of the Everflame
+2026-11-25 10:42:54,449 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/city-of-smoke-and-brimstone_49548664
+2026-11-25 10:43:04,396 INFO [libristo] 129 cãr\u021bi adãugate: City of Smoke and Brimstone
+2026-11-25 10:43:04,397 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/villains-are-destined-to-die-ln-v01_48159015
+2026-11-25 10:43:10,730 INFO [libristo] 130 cãr\u021bi adãugate: Villains Are Destined to Die (novel), Vol. 1
+2026-11-25 10:43:10,730 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/scorched-in-stone_41540175
+2026-11-25 10:43:19,931 INFO [libristo] duplicat la acelasi pret; ignor: Fourth Wing
+2026-11-25 10:43:19,931 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/empire-of-flame-and-thorns_49810930
+2026-11-25 10:43:24,790 INFO [libristo] 131 cãr\u021bi adãugate: Empire of Flame and Thorns
+2026-11-25 10:43:24,791 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/empire-of-storms_41370885
+2026-11-25 10:43:30,502 INFO [libristo] 132 cãr\u021bi adãugate: Empire of Storms
+2026-11-25 10:43:30,502 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/isle-in-the-silver-sea_48209751
+2026-11-25 10:43:56,658 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Isle in the Silver Sea
+2026-11-25 10:43:56,658 INFO [libristo] 133 cãr\u021bi adãugate: Isle in the Silver Sea
+2026-11-25 10:43:56,659 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance', pagina 9: https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance?page=9
+2026-11-25 10:43:56,991 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-engleza/fantasy-romance-dark-romance'
+2026-11-25 10:43:57,041 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-shepherd-king-duology-paperback-boxed-set_48163493
+2026-11-25 10:44:07,315 INFO [libristo] 134 cãr\u021bi adãugate: The Shepherd King Duology Paperback Boxed Set
+2026-11-25 10:44:07,317 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-court-of-silver-flames_53096086
+2026-11-25 10:44:11,320 INFO [libristo] 135 cãr\u021bi adãugate: A Court of Silver Flames
+2026-11-25 10:44:11,320 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shield-of-sparrows_48169069
+2026-11-25 10:44:15,372 INFO [goodreads.com] pauza lunga 88s
+2026-11-25 10:45:43,697 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/isbn/9781911750017
+2026-11-25 10:45:43,698 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 10:50:44,164 INFO [libristo] 136 cãr\u021bi adãugate: Shield of Sparrows
+2026-11-25 10:50:44,164 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/the-ballad-of-falling-dragons_49545485
+2026-11-25 10:50:44,951 INFO [libristo] 137 cãr\u021bi adãugate: The Ballad of Falling Dragons
+2026-11-25 10:50:44,953 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-light-in-the-flame-special-edition_49551781
+2026-11-25 10:50:45,774 INFO [libristo] 138 cãr\u021bi adãugate: A Light in the Flame Special Edition
+2026-11-25 10:50:45,776 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/apprentice-to-the-villain_44616045
+2026-11-25 10:50:46,403 INFO [libristo] 139 cãr\u021bi adãugate: Apprentice to the Villain
+2026-11-25 10:50:46,403 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gold_44349966
+2026-11-25 10:50:47,139 INFO [libristo] 140 cãr\u021bi adãugate: Gold
+2026-11-25 10:50:47,139 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance', pagina 1: https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance
+2026-11-25 10:50:47,216 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance'
+2026-11-25 10:50:47,280 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/accidentul_17354217
+2026-11-25 10:50:47,679 INFO [libristo] 141 cãr\u021bi adãugate: Accidentul
+2026-11-25 10:50:47,679 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/gardian-de-piatr_49787211
+2026-11-25 10:50:48,049 INFO [libristo] 142 cãr\u021bi adãugate: Gardian de Piatr\xbf
+2026-11-25 10:50:48,050 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/drumul-spre-rai-edi-ie-in-limba-roman_48197031
+2026-11-25 10:50:48,388 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: DRUMUL SPRE RAI (Edi?ie în limba Român?)
+2026-11-25 10:50:48,389 INFO [libristo] 143 cãr\u021bi adãugate: DRUMUL SPRE RAI (Edi?ie în limba Român?)
+2026-11-25 10:50:48,389 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fructul-interzis-edi-ia-rom-na_33486971
+2026-11-25 10:50:48,724 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Fructul interzis (Edi&amp;#539;ia roman&amp;#259;)
+2026-11-25 10:50:48,725 INFO [libristo] 144 cãr\u021bi adãugate: Fructul interzis (Edi&amp;#539;ia roman&amp;#259;)
+2026-11-25 10:50:48,725 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/vise-rupte_49788374
+2026-11-25 10:50:51,362 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Vise Rupte
+2026-11-25 10:50:51,363 INFO [libristo] 145 cãr\u021bi adãugate: Vise Rupte
+2026-11-25 10:50:51,363 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/salvarea-lui-jay_25373706
+2026-11-25 10:50:58,144 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Salvarea lui Jay
+2026-11-25 10:50:58,145 INFO [libristo] 146 cãr\u021bi adãugate: Salvarea lui Jay
+2026-11-25 10:50:58,145 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/santinel-de-piatr_49786915
+2026-11-25 10:50:58,489 INFO [libristo.ro] pauza lunga 76s
+2026-11-25 10:52:14,724 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Santinel\xbf de Piatr\xbf
+2026-11-25 10:52:14,725 INFO [libristo] 147 cãr\u021bi adãugate: Santinel\xbf de Piatr\xbf
+2026-11-25 10:52:14,725 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/dincolo-de-vise_43851270
+2026-11-25 10:52:21,912 INFO [libristo] 148 cãr\u021bi adãugate: Dincolo de Vise
+2026-11-25 10:52:21,914 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/indoaie-o_53232730
+2026-11-25 10:52:30,698 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Îndoaie-o
+2026-11-25 10:52:30,699 INFO [libristo] 149 cãr\u021bi adãugate: Îndoaie-o
+2026-11-25 10:52:30,700 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/shade_49787834
+2026-11-25 10:52:36,754 INFO [libristo] 150 cãr\u021bi adãugate: Shade
+2026-11-25 10:52:36,755 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fenrir_49787294
+2026-11-25 10:52:42,159 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Fenrir
+2026-11-25 10:52:42,159 INFO [libristo] 151 cãr\u021bi adãugate: Fenrir
+2026-11-25 10:52:42,159 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/pasiuni-printre-stele_53873031
+2026-11-25 10:52:48,984 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Pasiuni Printre Stele
+2026-11-25 10:52:48,985 INFO [libristo] 152 cãr\u021bi adãugate: Pasiuni Printre Stele
+2026-11-25 10:52:48,986 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/inim-de-o-el_49787424
+2026-11-25 10:52:55,951 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Inim\xbf de O\xbfel
+2026-11-25 10:52:55,952 INFO [libristo] 153 cãr\u021bi adãugate: Inim\xbf de O\xbfel
+2026-11-25 10:52:55,952 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/wings_49787503
+2026-11-25 10:53:03,470 INFO [libristo] 154 cãr\u021bi adãugate: Wings
+2026-11-25 10:53:03,470 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/misiunea-cupidon_50946722
+2026-11-25 10:53:11,522 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: MISIUNEA CUPIDON
+2026-11-25 10:53:11,523 INFO [libristo] 155 cãr\u021bi adãugate: MISIUNEA CUPIDON
+2026-11-25 10:53:11,523 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/oracolul_52524888
+2026-11-25 10:53:17,197 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Oracolul
+2026-11-25 10:53:17,198 INFO [libristo] 156 cãr\u021bi adãugate: Oracolul
+2026-11-25 10:53:17,199 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/a-treisprezecea-aniversare-a-lui-megan-un-ghid-spiritual-un-tigru-fantom-i-o-mam-infrico-toare_46125050
+2026-11-25 10:53:24,782 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: A Treisprezecea Aniversare A Lui Megan - Un Ghid Spiritual, Un Tigru Fantom? ?i O Mam? Înfrico??toare!
+2026-11-25 10:53:24,784 INFO [libristo] 157 cãr\u021bi adãugate: A Treisprezecea Aniversare A Lui Megan - Un Ghid Spiritual, Un Tigru Fantom? ?i O Mam? Înfrico??toare!
+2026-11-25 10:53:24,784 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/dark_49787383
+2026-11-25 10:53:31,132 INFO [libristo] 158 cãr\u021bi adãugate: Dark
+2026-11-25 10:53:31,133 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/inim-de-piatr_49787198
+2026-11-25 10:53:37,281 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Inim\xbf de Piatr\xbf
+2026-11-25 10:53:37,282 INFO [libristo] 159 cãr\u021bi adãugate: Inim\xbf de Piatr\xbf
+2026-11-25 10:53:37,282 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/modeleaza-o_53232710
+2026-11-25 10:53:45,261 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Modeleazã-o
+2026-11-25 10:53:45,263 INFO [libristo] 160 cãr\u021bi adãugate: Modeleazã-o
+2026-11-25 10:53:45,263 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance', pagina 2: https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance?page=2
+2026-11-25 10:53:45,613 INFO [libristo] gãsite 20 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance'
+2026-11-25 10:53:45,658 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/la-c-p-taiul-regelui_47195672
+2026-11-25 10:53:52,784 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: La c?p?tâiul regelui
+2026-11-25 10:53:52,784 INFO [libristo] 161 cãr\u021bi adãugate: La c?p?tâiul regelui
+2026-11-25 10:53:52,785 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/ultimul-dans-al-p-mantului_46998640
+2026-11-25 10:53:59,400 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Ultimul Dans al P?mântului
+2026-11-25 10:53:59,402 INFO [libristo] 162 cãr\u021bi adãugate: Ultimul Dans al P?mântului
+2026-11-25 10:53:59,403 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/libraria-paradise_54524542
+2026-11-25 10:54:06,961 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Librãria Paradise
+2026-11-25 10:54:06,962 INFO [libristo] 163 cãr\u021bi adãugate: Librãria Paradise
+2026-11-25 10:54:06,962 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/schimbarea_41464321
+2026-11-25 10:54:14,796 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Schimbarea
+2026-11-25 10:54:14,797 INFO [libristo] 164 cãr\u021bi adãugate: Schimbarea
+2026-11-25 10:54:14,797 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/un-secol-care-nu-exist_49993735
+2026-11-25 10:54:23,191 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Un secol care nu exist\xbf
+2026-11-25 10:54:23,193 INFO [libristo] 165 cãr\u021bi adãugate: Un secol care nu exist\xbf
+2026-11-25 10:54:23,193 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/dragoste-pura_53683272
+2026-11-25 10:54:31,079 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Dragoste Purã
+2026-11-25 10:54:31,080 INFO [libristo] 166 cãr\u021bi adãugate: Dragoste Purã
+2026-11-25 10:54:31,082 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/doua-surori_53657798
+2026-11-25 10:54:36,274 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Douã surori
+2026-11-25 10:54:36,275 INFO [libristo] 167 cãr\u021bi adãugate: Douã surori
+2026-11-25 10:54:36,275 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/campion-de-piatr_49788382
+2026-11-25 10:54:43,739 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/isbn/9798232940881
+2026-11-25 10:54:43,739 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 10:59:43,842 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Campion de Piatr\xbf
+2026-11-25 10:59:43,844 INFO [libristo] 168 cãr\u021bi adãugate: Campion de Piatr\xbf
+2026-11-25 10:59:43,844 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/loki_49788278
+2026-11-25 10:59:46,596 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Loki
+2026-11-25 10:59:46,596 INFO [libristo] 169 cãr\u021bi adãugate: Loki
+2026-11-25 10:59:46,597 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/razboinicul_52538056
+2026-11-25 10:59:50,125 INFO [goodreads.com] pauza lunga 109s
+2026-11-25 11:01:39,639 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/isbn/9798235387041
+2026-11-25 11:01:39,641 WARNING [goodreads.com] pauzã 300s dupã WAF, apoi reîncerc o singurã datã aceea\u0219i cerere
+2026-11-25 11:06:39,707 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Rãzboinicul
+2026-11-25 11:06:39,708 INFO [libristo] 170 cãr\u021bi adãugate: Rãzboinicul
+2026-11-25 11:06:39,708 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/lan-uri-rupte_49786801
+2026-11-25 11:06:39,837 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Lan\xbfuri Rupte
+2026-11-25 11:06:39,838 INFO [libristo] 171 cãr\u021bi adãugate: Lan\xbfuri Rupte
+2026-11-25 11:06:39,838 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/leg-turi-rupte_49787164
+2026-11-25 11:06:39,974 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Leg\xbfturi Rupte
+2026-11-25 11:06:39,976 INFO [libristo] 172 cãr\u021bi adãugate: Leg\xbfturi Rupte
+2026-11-25 11:06:39,976 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/odin_49786916
+2026-11-25 11:06:40,115 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Odin
+2026-11-25 11:06:40,116 INFO [libristo] 173 cãr\u021bi adãugate: Odin
+2026-11-25 11:06:40,116 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/claw_49787027
+2026-11-25 11:06:40,228 INFO [libristo] 174 cãr\u021bi adãugate: Claw
+2026-11-25 11:06:40,228 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/thor_49787828
+2026-11-25 11:06:40,416 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Thor
+2026-11-25 11:06:40,417 INFO [libristo] 175 cãr\u021bi adãugate: Thor
+2026-11-25 11:06:40,417 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/adevarata-rezonanta_51251901
+2026-11-25 11:06:40,546 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: ADEVÃRATA REZONAN\u021aÃ
+2026-11-25 11:06:40,547 INFO [libristo] 176 cãr\u021bi adãugate: ADEVÃRATA REZONAN\u021aÃ
+2026-11-25 11:06:40,548 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/talon_49787500
+2026-11-25 11:06:40,688 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Talon
+2026-11-25 11:06:40,688 INFO [libristo] 177 cãr\u021bi adãugate: Talon
+2026-11-25 11:06:40,689 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/umbra_53026823
+2026-11-25 11:06:40,827 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Umbra
+2026-11-25 11:06:40,828 INFO [libristo] 178 cãr\u021bi adãugate: Umbra
+2026-11-25 11:06:40,828 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/vrajitoarea-si-lupul_54108933
+2026-11-25 11:06:40,952 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Vrãjitoarea \u0219i Lupul
+2026-11-25 11:06:40,953 INFO [libristo] 179 cãr\u021bi adãugate: Vrãjitoarea \u0219i Lupul
+2026-11-25 11:06:40,953 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/pure-love_53651485
+2026-11-25 11:06:44,092 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Pure Love
+2026-11-25 11:06:44,093 INFO [libristo] 180 cãr\u021bi adãugate: Pure Love
+2026-11-25 11:06:44,093 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance', pagina 3: https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance?page=3
+2026-11-25 11:06:44,163 WARNING eroare retea https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance?page=3: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-11-25 11:06:44,164 INFO [libristo.ro] backoff 17s
+2026-11-25 11:07:02,021 INFO [libristo] gãsite 5 linkuri de produs pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance'
+2026-11-25 11:07:02,085 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/g-sit-in-z-pad_50080842
+2026-11-25 11:07:10,563 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: G\xbfSIT ÎN Z\xbfPAD\xbf
+2026-11-25 11:07:10,564 INFO [libristo] 181 cãr\u021bi adãugate: G\xbfSIT ÎN Z\xbfPAD\xbf
+2026-11-25 11:07:10,564 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fang_49787474
+2026-11-25 11:07:18,186 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Fang
+2026-11-25 11:07:18,188 INFO [libristo] 182 cãr\u021bi adãugate: Fang
+2026-11-25 11:07:18,188 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/umbra-de-piatr_49787715
+2026-11-25 11:07:24,063 INFO [libristo.ro] pauza lunga 61s
+2026-11-25 11:08:25,859 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Umbra de Piatr\xbf
+2026-11-25 11:08:25,861 INFO [libristo] 183 cãr\u021bi adãugate: Umbra de Piatr\xbf
+2026-11-25 11:08:25,861 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/fluturi-si-noduri_53874104
+2026-11-25 11:08:26,010 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Fluturi si Noduri
+2026-11-25 11:08:26,011 INFO [libristo] 184 cãr\u021bi adãugate: Fluturi si Noduri
+2026-11-25 11:08:26,011 INFO [libristo] descarc produsul https://www.libristo.ro/ro/carte/col-ii-mei-sunt-fabulo-i-o-poveste-de-dragoste-dintre-un-vampir-aproape-uman-i-un-om_46298392
+2026-11-25 11:08:26,231 INFO [libristo] Goodreads fara rating/evaluari; pastrez cartea: Col?ii Mei Sunt Fabulo?i! - O Poveste De Dragoste Dintre Un Vampir Aproape Uman ?i Un Om
+2026-11-25 11:08:26,232 INFO [libristo] 185 cãr\u021bi adãugate: Col?ii Mei Sunt Fabulo?i! - O Poveste De Dragoste Dintre Un Vampir Aproape Uman ?i Un Om
+2026-11-25 11:08:26,232 INFO [libristo] caut rezultate pentru 'https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance', pagina 4: https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance?page=4
+2026-11-25 11:08:26,270 WARNING [libristo] 0 linkuri de produs gasite (pagina 4, query=https://www.libristo.ro/ro/carti-in-limba-romana/fantasy-romance-dark-romance) - verifica search_url/product_re
+2026-11-25 11:08:26,271 INFO Gata: data\date_libristo.csv

@@ -1,0 +1,26 @@
+2026-11-25 21:37:27,034 INFO Rânduri Libris fãrã rating sau original title: 1646; fi\u0219ier: data\date_libris.csv
+2026-11-25 21:37:27,045 INFO Rundã finalã de retry: 1129 rânduri amânate; cooldown 5 secunde
+2026-11-25 21:37:42,314 WARNING [368/1646] retry final fãrã rezultat; va putea fi încercat la urmãtoarea rulare: Supernatural: John Winchester Hardcover Ruled Journal
+2026-11-25 21:37:56,106 WARNING [502/1646] retry final fãrã rezultat; va putea fi încercat la urmãtoarea rulare: Casa. Cartea intai - Alex Moldovan
+2026-11-25 21:38:21,645 INFO [520/1646] potrivire Goodreads: Capitanul Apostolescu si piromanul - Horia Tecuceanu (rating=4.13, original title=null)
+2026-11-25 21:38:26,897 INFO [521/1646] potrivire Goodreads: Obstinatia capitanului Apostolescu - Horia Tecuceanu (rating=4.17, original title=null)
+2026-11-25 21:38:51,018 INFO [522/1646] potrivire Goodreads: Capitanul Apostolescu si spionii - Horia Tecuceanu (rating=4.01, original title=null)
+2026-11-25 21:38:57,662 INFO [523/1646] potrivire Goodreads: Capitanul Apostolescu si inamicul public Nr.1 - Horia Tecuceanu (rating=4.16, original title=Capitanul Apostolescu si Inamicul Public Nr. 1)
+2026-11-25 21:39:04,964 INFO [524/1646] potrivire Goodreads: Noiembrie insangerat - Haralamb Zinca (rating=4.31, original title=null)
+2026-11-25 21:39:11,352 INFO [525/1646] potrivire Goodreads: Disparitia - Cosmin Perta (rating=3.67, original title=Dispari\u021bia)
+2026-11-25 21:39:17,581 INFO [526/1646] potrivire Goodreads: Leopardul - Jo Nesbo (rating=4.1, original title=null)
+2026-11-25 21:39:25,347 INFO [527/1646] potrivire Goodreads: Femeia din far - Ragnar Jonasson (rating=3.79, original title=Rof)
+2026-11-25 21:39:32,536 INFO [528/1646] potrivire Goodreads: Barbati care urasc femeile. Seria Millennium Vol.1 - Stieg Larsson (rating=4.18, original title=Män som hatar kvinnor)
+2026-11-25 21:39:41,754 INFO [529/1646] potrivire Goodreads: Ancheta in infern - Rodica Ojog-Brasoveanu (rating=4.03, original title=Anchetã în infern)
+2026-11-25 21:40:08,279 INFO [530/1646] potrivire Goodreads: Un studiu in rosu. Semnul celor patru - Arthur Conan Doyle (rating=4.13, original title=A Study in Scarlet / The Sign of the Four)
+2026-11-25 21:40:16,331 INFO [531/1646] potrivire Goodreads: Chipurile lui Ahriman - Marius Albert Negut (rating=4.8, original title=null)
+2026-11-25 21:40:23,591 INFO [goodreads.com] pauza lunga 84s
+2026-11-25 21:42:08,433 INFO [532/1646] potrivire Goodreads: Telefonul din bikini - Rodica Ojog-Brasoveanu (rating=4.07, original title=Telefonul din bikini)
+2026-11-25 21:42:14,504 INFO [533/1646] potrivire Goodreads: Un studiu in rosu. Seria Sherlock Holmes - Sir Athur Conan Doyle (rating=4.12, original title=A Study in Scarlet)
+2026-11-25 21:42:21,273 INFO [534/1646] potrivire Goodreads: O nimica toata. Seria Belascoaran Vol.2 - Paco Ignacio Taibo II (rating=3.9, original title=Cosa Fácil)
+2026-11-25 21:42:28,511 INFO [535/1646] potrivire Goodreads: Nori la orizont. Seria Belascoaran Vol.3 - Paco Ignacio Taibo II (rating=3.89, original title=Algunas Nubes)
+2026-11-25 21:42:39,660 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/search?q=9786303034102&page=1
+2026-11-25 21:42:39,661 WARNING [goodreads.com] opresc cererile dupa WAF challenge
+2026-11-25 21:42:39,661 WARNING Goodreads: acces blocat; rândul trebuie reîncercat (goodreads.com: WAF challenge)
+2026-11-25 21:42:39,688 WARNING Runda finalã a întâlnit din nou WAF; amân restul \u0219i închei fãrã retry în buclã.
+2026-11-25 21:42:39,688 INFO Gata. CSV actualizat: data\date_libris.csv; stare retry: data\date_libris_goodreads_retry.json

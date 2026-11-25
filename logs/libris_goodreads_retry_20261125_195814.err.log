@@ -1,0 +1,118 @@
+2026-11-25 19:58:15,517 INFO Rânduri Libris fãrã rating sau original title: 1721; fi\u0219ier: data\date_libris.csv
+2026-11-25 19:58:21,551 WARNING [368/1721] Goodreads blocat sau inaccesibil pentru «Supernatural: John Winchester Hardcover Ruled Journal»; reîncerc în 5 minute
+2026-11-25 20:03:30,365 WARNING [368/1721] încã indisponibil; amân acest rând \u0219i continui cu urmãtorul: Supernatural: John Winchester Hardcover Ruled Journal
+2026-11-25 20:03:50,815 INFO [500/1721] nu existã o potrivire Goodreads confirmatã: Harry Potter si Ordinul Phoenix Ed. Ilustrata - J.K. Rowling
+2026-11-25 20:03:56,569 INFO [501/1721] potrivire Goodreads: Pacatul vostru. Seria Culpables Vol.4 - Mercedes Ron (rating=3.89, original title=Culpa vuestra)
+2026-11-25 20:04:20,475 INFO [502/1721] potrivire Goodreads: Maitreyi - Mircea Eliade (rating=3.75, original title=Maitreyi)
+2026-11-25 20:04:41,263 INFO [503/1721] nu existã o potrivire Goodreads confirmatã: Esti acolo, doamne? Sunt eu, Margaret - Judy Blume
+2026-11-25 20:04:48,535 INFO [504/1721] potrivire Goodreads: O mare de lacrimi - Ruta Sepetys (rating=4.34, original title=Salt to the Sea)
+2026-11-25 20:05:00,500 WARNING [505/1721] Goodreads blocat sau inaccesibil pentru «Casa. Cartea intai - Alex Moldovan»; reîncerc în 5 minute
+2026-11-25 20:10:08,332 WARNING [505/1721] încã indisponibil; amân acest rând \u0219i continui cu urmãtorul: Casa. Cartea intai - Alex Moldovan
+2026-11-25 20:10:17,432 INFO [506/1721] potrivire Goodreads: Atelierul Vrajitoarelor Vol.1 - Kamome Shirahama (rating=4.46, original title=\u3068\u3093\u304c\u308a\u5e3d\u5b50\u306e\u30a2\u30c8\u30ea\u30a8 1)
+2026-11-25 20:10:25,544 INFO [507/1721] potrivire Goodreads: Regatul gheturilor si al instelarii. Seria Acotar Vol.4 - Sarah J. Maas (rating=3.7, original title=A Court of Frost and Starlight)
+2026-11-25 20:10:44,412 INFO [508/1721] nu existã o potrivire Goodreads confirmatã: Idolii K-pop de la miezul noptii. Carte de colorat - Amanda Harrison
+2026-11-25 20:10:49,364 INFO [goodreads.com] pauza lunga 99s
+2026-11-25 20:12:31,411 INFO [509/1721] potrivire Goodreads: Adam si Eva - Liviu Rebreanu (rating=4.14, original title=Adam \u0219i Eva)
+2026-11-25 20:12:40,836 INFO [510/1721] potrivire Goodreads: Printul nemilos - Holly Black (rating=4.0, original title=The Cruel Prince)
+2026-11-25 20:12:49,188 INFO [511/1721] potrivire Goodreads: Dash, Lily si Cartea Provocarilor - Rachel Cohn, David Levithan (rating=3.74, original title=Dash & Lily's Book of Dares)
+2026-11-25 20:12:57,412 INFO [512/1721] potrivire Goodreads: Fata care a cazut in adancurile marii - Axie Oh (rating=4.07, original title=The Girl Who Fell Beneath the Sea)
+2026-11-25 20:13:04,280 INFO [513/1721] potrivire Goodreads: Atelierul Vrajitoarelor Vol.4 - Kamome Shirahama (rating=4.56, original title=\u3068\u3093\u304c\u308a\u5e3d\u5b50\u306e\u30a2\u30c8\u30ea\u30a8 4)
+2026-11-25 20:13:10,025 INFO [514/1721] potrivire Goodreads: Globul de zapada - Soyoung Park (rating=3.54, original title=\uc2a4\ub178\ubcfc)
+2026-11-25 20:13:36,113 INFO [515/1721] potrivire Goodreads: Fauritoarea de albastru - Lois Lowry (rating=3.82, original title=Gathering Blue)
+2026-11-25 20:13:42,207 INFO [516/1721] potrivire Goodreads: Juramant de sange. Seria Legamantul blestemat Vol. 1 - Ellis Hunter (rating=4.08, original title=Blood Bound)
+2026-11-25 20:13:51,324 INFO [517/1721] potrivire Goodreads: Adevarul - Care Santos (rating=3.65, original title=Verdad)
+2026-11-25 20:14:08,039 INFO [518/1721] nu existã o potrivire Goodreads confirmatã: Vara coiotului - Mimi Thebo
+2026-11-25 20:14:16,485 INFO [519/1721] potrivire Goodreads: Baiatul care a imblanzit vantul l - P.R. Morrison (rating=3.56, original title=Wind Tamer)
+2026-11-25 20:14:26,621 INFO [520/1721] potrivire Goodreads: Radio Silence - Alice Oseman (rating=4.17, original title=Radio Silence)
+2026-11-25 20:14:33,717 INFO [521/1721] potrivire Goodreads: 9 noiembrie - Colleen Hoover (rating=4.1, original title=November 9)
+2026-11-25 20:14:41,933 INFO [522/1721] potrivire Goodreads: Pactul Rozei. Seria Pactul Rozei Vol.1 - Sasha Peyton Smith (rating=3.93, original title=The Rose Bargain)
+2026-11-25 20:14:49,862 INFO [523/1721] potrivire Goodreads: Nascuti in spatiu - Nadia Ciobotaru (rating=4.0, original title=null)
+2026-11-25 20:15:07,667 INFO [524/1721] nu existã o potrivire Goodreads confirmatã: Cum sa-ti dresezi dragonul. Seria Cum sa-ti dresezi dragonul Vol.1 - Cressida Cowell
+2026-11-25 20:15:17,908 INFO [525/1721] potrivire Goodreads: Mici favoruri - Erin A. Craig (rating=4.0, original title=Small Favors)
+2026-11-25 20:15:26,251 INFO [526/1721] potrivire Goodreads: Instructiuni pentru fete cuminti (Editie tie-in). Seria Crima perfecta Vol.1 - Holly Jackson (rating=4.27, original title=A Good Girl's Guide to Murder)
+2026-11-25 20:15:31,805 INFO [goodreads.com] pauza lunga 101s
+2026-11-25 20:17:33,850 INFO [527/1721] potrivire Goodreads: Familia mea si alte animale - Gerald Durrell (rating=4.16, original title=My Family and Other Animals)
+2026-11-25 20:17:50,125 INFO [528/1721] nu existã o potrivire Goodreads confirmatã: Cat timp infloresc lamaii. Editie de colectie - Zoulfa Katouh
+2026-11-25 20:18:01,435 INFO [529/1721] potrivire Goodreads: Pollyanna si comorile ei - Harriet Lummis Smith (rating=3.87, original title=Pollyanna's Jewels)
+2026-11-25 20:18:11,626 INFO [530/1721] potrivire Goodreads: Infernalii - John Connolly (rating=3.9, original title=Hell’s Bells)
+2026-11-25 20:18:28,495 INFO [531/1721] nu existã o potrivire Goodreads confirmatã: Ramona si tata. Vol.4 - Beverly Cleary
+2026-11-25 20:18:36,358 INFO [532/1721] potrivire Goodreads: Barbatul cu stigmat - Robert Galbraith (rating=4.2, original title=The Hallmarked Man)
+2026-11-25 20:18:54,268 INFO [533/1721] nu existã o potrivire Goodreads confirmatã: Mistere pentru clubul de marti - Agatha Christie
+2026-11-25 20:19:10,652 INFO [534/1721] nu existã o potrivire Goodreads confirmatã: Ringo, aventurile unui caine politist - Traian Tandin
+2026-11-25 20:19:18,134 INFO [535/1721] potrivire Goodreads: Petrecerea de vanatoare - Lucy Foley (rating=3.59, original title=The Hunting Party)
+2026-11-25 20:19:25,454 INFO [536/1721] potrivire Goodreads: Crima la vicariat - Agatha Christie (rating=4.03, original title=The Murder at the Vicarage)
+2026-11-25 20:19:31,427 INFO [537/1721] potrivire Goodreads: O lume de bizarerii - Louise Penny (rating=4.43, original title=A World of Curiosities)
+2026-11-25 20:20:01,105 INFO [goodreads.com] pauza lunga 104s
+2026-11-25 20:21:48,622 INFO [538/1721] potrivire Goodreads: Nuferi negri - Michel Bussi (rating=4.04, original title=Nymphéas noirs)
+2026-11-25 20:22:05,658 INFO [539/1721] nu existã o potrivire Goodreads confirmatã: Pachet 8 volume: Sherlock Holmes - Arthur Conan Doyle
+2026-11-25 20:22:15,903 INFO [540/1721] potrivire Goodreads: De Craciunul acesta, toti au cate un secret - Benjamin Stevenson (rating=3.68, original title=Everyone This Christmas Has a Secret)
+2026-11-25 20:22:22,786 INFO [541/1721] potrivire Goodreads: Poveste imorala - Rodica Ojog-Brasoveanu (rating=4.2, original title=Poveste imoralã)
+2026-11-25 20:22:29,807 INFO [542/1721] potrivire Goodreads: N sau M? - Agatha Christie (rating=3.81, original title=N or M?)
+2026-11-25 20:22:39,042 INFO [543/1721] potrivire Goodreads: Omul de zapada - Jo Nesbo (rating=4.03, original title=Sn\xf8mannen)
+2026-11-25 20:23:05,144 INFO [544/1721] potrivire Goodreads: Moartea semneaza indescifrabil - Rodica Ojog-Brasoveanu (rating=4.08, original title=Moartea semneazã indescifrabil)
+2026-11-25 20:23:14,971 INFO [545/1721] potrivire Goodreads: Tabloul - Agatha Christie (rating=3.77, original title=By the Pricking of My Thumbs)
+2026-11-25 20:23:31,101 INFO [546/1721] nu existã o potrivire Goodreads confirmatã: Tambalau la Bucuresti - Sylvain Audet-Gainar
+2026-11-25 20:23:47,918 INFO [547/1721] nu existã o potrivire Goodreads confirmatã: Fara suflare - Alexis Laipsker
+2026-11-25 20:23:53,740 INFO [548/1721] potrivire Goodreads: Pisica printre porumbei - Agatha Christie (rating=3.86, original title=Cat Among the Pigeons)
+2026-11-25 20:24:18,106 INFO [549/1721] nu existã o potrivire Goodreads confirmatã: Tap ispasitor - Sylvain Audet-Gainar
+2026-11-25 20:24:25,907 INFO [550/1721] potrivire Goodreads: Doamna McGinty a murit - Agatha Christie (rating=3.86, original title=Mrs. McGinty's Dead)
+2026-11-25 20:24:35,200 INFO [551/1721] potrivire Goodreads: Inima neagra ca noaptea - Robert Galbraith (rating=4.13, original title=The Ink Black Heart)
+2026-11-25 20:24:37,952 INFO [goodreads.com] pauza lunga 108s
+2026-11-25 20:26:29,377 INFO [552/1721] potrivire Goodreads: Fara scapare - Mark Billingham (rating=3.49, original title=Rabbit Hole)
+2026-11-25 20:26:35,722 INFO [553/1721] potrivire Goodreads: Carabusii - Jo Nesbo (rating=3.73, original title=Kakerlakkene)
+2026-11-25 20:26:42,318 INFO [554/1721] potrivire Goodreads: Adevar sau provocare - M.J. Arlidge (rating=4.18, original title=Truth or Dare)
+2026-11-25 20:27:05,154 INFO [555/1721] potrivire Goodreads: Leii au murit - Mick Herron (rating=4.13, original title=Dead Lions)
+2026-11-25 20:27:13,154 INFO [556/1721] potrivire Goodreads: Cosmar - Rodica Ojog-Brasoveanu (rating=4.04, original title=Coºmar)
+2026-11-25 20:27:18,984 INFO [557/1721] potrivire Goodreads: Ultima problema - Arturo Perez-Reverte (rating=3.62, original title=El problema final)
+2026-11-25 20:27:25,534 INFO [558/1721] potrivire Goodreads: Enigma camerei 622 - Joel Dicker (rating=3.9, original title=L’énigme de la chambre 622)
+2026-11-25 20:27:46,956 INFO [559/1721] potrivire Goodreads: Martorul inocentei mele - Jonathan Coe (rating=3.7, original title=The Proof of My Innocence)
+2026-11-25 20:27:56,843 INFO [560/1721] potrivire Goodreads: Adevarul despre cazul Harry Quebert - Joel Dicker (rating=4.2, original title=La vérité sur l'affaire Harry Québert)
+2026-11-25 20:28:03,733 INFO [561/1721] potrivire Goodreads: Pasarea cu piept rosu - Jo Nesbo (rating=3.95, original title=R\xf8dstrupe)
+2026-11-25 20:28:11,909 INFO [562/1721] potrivire Goodreads: Crucea lui Cross - James Patterson (rating=4.25, original title=Criss Cross)
+2026-11-25 20:28:36,662 INFO [563/1721] potrivire Goodreads: Surprizele capitanului Apostolescu - Horia Tecuceanu (rating=4.27, original title=Surprizele cãpitanului Apostolescu)
+2026-11-25 20:28:47,683 INFO [564/1721] potrivire Goodreads: Glasul sangelui - Robert Galbraith (rating=4.39, original title=Troubled Blood)
+2026-11-25 20:28:54,752 INFO [565/1721] potrivire Goodreads: Enigma la mansarda - Rodica Ojog-Brasoveanu (rating=4.06, original title=Enigmã la Mansardã)
+2026-11-25 20:29:05,448 INFO [566/1721] potrivire Goodreads: O bomba pentru Revelion - Rodica Ojog-Brasoveanu (rating=4.14, original title=\u0218tafeta)
+2026-11-25 20:29:11,724 INFO [567/1721] potrivire Goodreads: Lupul cenusiu - Louise Penny (rating=4.09, original title=The Grey Wolf)
+2026-11-25 20:29:14,330 INFO [goodreads.com] pauza lunga 85s
+2026-11-25 20:30:42,612 INFO [568/1721] potrivire Goodreads: Imposibila avere - Richard Osman (rating=4.24, original title=The Impossible Fortune)
+2026-11-25 20:30:49,722 INFO [569/1721] potrivire Goodreads: Ghostwriter - Julie Clark (rating=4.03, original title=The Ghostwriter)
+2026-11-25 20:30:56,492 INFO [570/1721] potrivire Goodreads: Lupul negru - Louise Penny (rating=4.12, original title=The Black Wolf)
+2026-11-25 20:31:03,440 INFO [571/1721] potrivire Goodreads: Chemarea cucului - Robert Galbraith (rating=3.9, original title=The Cuckoo's Calling)
+2026-11-25 20:31:12,695 INFO [572/1721] potrivire Goodreads: Alb letal - Robert Galbraith (rating=4.25, original title=Lethal White)
+2026-11-25 20:31:22,238 INFO [573/1721] potrivire Goodreads: Casa de vacanta - Jorn Lier Horst (rating=3.71, original title=Vinterstengt)
+2026-11-25 20:31:31,595 INFO [574/1721] potrivire Goodreads: Padurea - Tana French (rating=3.78, original title=In the Woods)
+2026-11-25 20:31:53,430 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/search?q=cutia+cu+nasturi+-+rodica+ojog-brasoveanu+Rodica+Ojog-Brasoveanu&page=1
+2026-11-25 20:31:53,431 WARNING [goodreads.com] opresc cererile dupa WAF challenge
+2026-11-25 20:31:53,431 WARNING Goodreads: acces blocat; rândul trebuie reîncercat (goodreads.com: WAF challenge)
+2026-11-25 20:31:53,431 WARNING [575/1721] Goodreads blocat sau inaccesibil pentru «Cutia cu nasturi - Rodica Ojog-Brasoveanu»; reîncerc în 5 minute
+2026-11-25 20:37:15,629 INFO [575/1721] potrivire Goodreads: Cutia cu nasturi - Rodica Ojog-Brasoveanu (rating=3.96, original title=Cutia cu nasturi)
+2026-11-25 20:37:24,674 INFO [576/1721] potrivire Goodreads: Noi rezolvam crime - Richard Osman (rating=4.04, original title=We Solve Murders)
+2026-11-25 20:37:32,390 INFO [577/1721] potrivire Goodreads: Ascunsa in umbra. Seria Crimele din Are Vol.2 - Viveca Sten (rating=4.16, original title=Dalskuggan)
+2026-11-25 20:37:40,600 INFO [578/1721] potrivire Goodreads: Trusa criminalistica - Tony Parsons (rating=3.83, original title=The Murder Bag)
+2026-11-25 20:37:49,119 INFO [579/1721] potrivire Goodreads: Aer rarefiat - Ann Cleeves (rating=4.06, original title=Thin Air)
+2026-11-25 20:37:58,245 INFO [580/1721] potrivire Goodreads: Greseala capitanului Apostolescu - Horia Tecuceanu (rating=4.03, original title=null)
+2026-11-25 20:38:04,089 INFO [581/1721] potrivire Goodreads: Acolo unde vantul rostogoleste norii. Chirie pentru speranta - Leonida Neamtu (rating=3.14, original title=null)
+2026-11-25 20:38:12,764 INFO [582/1721] potrivire Goodreads: Vizita tinerei doamne - George Arion (rating=3.29, original title=null)
+2026-11-25 20:38:19,103 INFO [583/1721] potrivire Goodreads: Cutitul - Jo Nesbo (rating=4.27, original title=Kniv)
+2026-11-25 20:38:29,194 INFO [584/1721] potrivire Goodreads: Nimic nu mi te poate sterge din minte - Michel Bussi (rating=3.81, original title=Rien ne t'efface)
+2026-11-25 20:38:34,940 INFO [585/1721] potrivire Goodreads: Luna ucigasa - Jo Nesbo (rating=4.18, original title=Blodm\xe5ne)
+2026-11-25 20:38:40,525 INFO [586/1721] potrivire Goodreads: Tipat in tacere - Angela Marsons (rating=4.07, original title=Silent Scream)
+2026-11-25 20:38:43,547 INFO [goodreads.com] pauza lunga 93s
+2026-11-25 20:40:35,573 INFO [587/1721] potrivire Goodreads: Viciu ascuns - Thomas Pynchon (rating=3.8, original title=Inherent Vice)
+2026-11-25 20:40:44,495 INFO [588/1721] potrivire Goodreads: Zile de lupta. Seria Belascoaran Vol.1 - Paco Ignacio Taibo II (rating=3.79, original title=Días de Combate)
+2026-11-25 20:40:49,873 INFO [589/1721] potrivire Goodreads: Martorul inocentei mele - Jonathan Coe (rating=3.7, original title=The Proof of My Innocence)
+2026-11-25 20:40:59,260 INFO [590/1721] potrivire Goodreads: Doar intunericul stie. Seria Konrad Vol.1 - Arnaldur Indridason (rating=3.56, original title=Myrkri\xf0 veit)
+2026-11-25 20:41:16,626 INFO [591/1721] nu existã o potrivire Goodreads confirmatã: Dincolo de geamandura. Seria Comisarul Montalbano - Andrea Camilleri
+2026-11-25 20:41:24,704 INFO [592/1721] potrivire Goodreads: Louisiana blues - James Lee Burke (rating=4.17, original title=Black Cherry Blues)
+2026-11-25 20:41:32,226 INFO [593/1721] potrivire Goodreads: Sherlock Holmes: ultima reverenta - Arthur Conan Doyle (rating=4.05, original title=null)
+2026-11-25 20:41:40,356 INFO [594/1721] potrivire Goodreads: Mlastina - Susanne Jansson (rating=3.44, original title=Offermossen)
+2026-11-25 20:42:01,044 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/book/show/25478815
+2026-11-25 20:42:01,045 WARNING [goodreads.com] opresc cererile dupa WAF challenge
+2026-11-25 20:42:01,045 WARNING Goodreads: acces blocat; rândul trebuie reîncercat (goodreads.com: WAF challenge)
+2026-11-25 20:42:01,045 WARNING [595/1721] Goodreads blocat sau inaccesibil pentru «Capitanul Apostolescu si piromanul - Horia Tecuceanu»; reîncerc în 5 minute
+2026-11-25 20:47:06,342 WARNING [goodreads.com] WAF challenge (202) pe https://www.goodreads.com/search?q=9786069605035&page=1
+2026-11-25 20:47:06,343 WARNING [goodreads.com] opresc cererile dupa WAF challenge
+2026-11-25 20:47:06,343 WARNING Goodreads: acces blocat; rândul trebuie reîncercat (goodreads.com: WAF challenge)
+2026-11-25 20:47:06,347 ERROR Goodreads rãmâne blocat dupã cooldown; opresc batch-ul fãrã sã pierd progresul. Reia dupã 300 secunde.
+2026-11-25 20:47:06,348 INFO Gata. CSV actualizat: data\date_libris.csv; stare retry: data\date_libris_goodreads_retry.json
