@@ -1,4 +1,4 @@
-"""Scraper Elefant pentru cele șase categorii, cu export în data/date_elefant.csv.
+"""Scraper Elefant pentru cele șase categorii, cu export în data/carti_elefant.csv.
 
 Exemple:
   python run_elefant_scraper.py
@@ -29,6 +29,6 @@ ELEFANT_CATEGORIES = [
 
 
 if __name__ == "__main__":
-    main(default_sites=["elefant"], default_out="data/date_elefant.csv",
+    main(default_sites=["elefant"], default_out="data/carti_elefant.csv",
          default_queries=ELEFANT_CATEGORIES, default_no_goodreads=False,
          default_pages=0, default_limit=0, default_per_category_limit=100)

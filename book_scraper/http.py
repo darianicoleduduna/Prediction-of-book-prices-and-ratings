@@ -32,11 +32,13 @@ class PoliteClient:
                  long_pause_every=(20, 40), long_pause=(30, 90),
                  max_retries=4, block_limit=3, proxies=None,
                  cache_dir="cache", respect_robots=True, timeout=30,
-                 ignore_robots_domains=None, fail_fast_403_domains=None):
+                 ignore_robots_domains=None, fail_fast_403_domains=None,
+                 goodreads_block_waits=(300, 600)):
         self.min_delay, self.max_delay = min_delay, max_delay
         self.domain_delays = domain_delays or {}   # {"goodreads.com": (6, 18)}
         self.long_pause_every, self.long_pause = long_pause_every, long_pause
         self.max_retries, self.block_limit = max_retries, block_limit
+        self.goodreads_block_waits = tuple(goodreads_block_waits)
         self.proxies = list(proxies or [])
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -76,7 +78,8 @@ class PoliteClient:
         elapsed = time.time() - self._last_req.get(domain, 0)
         if elapsed < delay:
             time.sleep(delay - elapsed)
-        n = self._count[domain] = self._count.get(domain, 0) + 1
+        # Pause before the next request once the configured number has finished.
+        n = self._count.get(domain, 0)
         nxt = self._next_pause.setdefault(domain, random.randint(*self.long_pause_every))
         if n >= nxt:
             pause = random.uniform(*self.long_pause)
@@ -84,6 +87,7 @@ class PoliteClient:
             time.sleep(pause)
             self._count[domain] = 0
             self._next_pause[domain] = random.randint(*self.long_pause_every)
+        self._count[domain] = self._count.get(domain, 0) + 1
 
     def _session(self, domain, fresh=False):
         if fresh or domain not in self._sessions:
@@ -157,7 +161,7 @@ class PoliteClient:
         return html
 
     # ---------- API ----------
-    def get(self, url, use_cache=True, _goodreads_cooldown_retry=True):
+    def get(self, url, use_cache=True, _goodreads_block_retries=0):
         """Returneaza HTML (str) sau None (404 / interzis de robots)."""
         cp = self._cache_path(url)
         if use_cache and cp.exists():
@@ -196,12 +200,15 @@ class PoliteClient:
                         self._last_url[domain] = url
                         cp.write_text(html, encoding="utf-8")
                         return html
-                if domain == "goodreads.com" and _goodreads_cooldown_retry:
-                    log.warning("[%s] pauză 180s după WAF, apoi reîncerc o singură dată aceeași cerere", domain)
-                    time.sleep(180)
+                if domain == "goodreads.com" and _goodreads_block_retries < len(self.goodreads_block_waits):
+                    wait = self.goodreads_block_waits[_goodreads_block_retries]
+                    log.warning("[%s] WAF: pauză %ds, apoi reîncerc aceeași cerere (%d/%d)",
+                                domain, wait, _goodreads_block_retries + 1,
+                                len(self.goodreads_block_waits))
+                    time.sleep(wait)
                     self._blocks[domain] = 0
                     return self.get(url, use_cache=use_cache,
-                                    _goodreads_cooldown_retry=False)
+                                    _goodreads_block_retries=_goodreads_block_retries + 1)
                 self._blocks[domain] = self.block_limit
                 log.warning("[%s] opresc cererile dupa WAF challenge", domain)
                 raise BlockedError(f"{domain}: WAF challenge")
@@ -232,12 +239,15 @@ class PoliteClient:
                 suffix = f" ({'; '.join(details)})" if details else ""
                 log.warning("[%s] blocat/limitat (%s) pe %s%s", domain, status, url, suffix)
                 if self._blocks[domain] >= self.block_limit:
-                    if domain == "goodreads.com" and _goodreads_cooldown_retry:
-                        log.warning("[%s] pauză 180s după blocaje repetate, apoi reîncerc o singură dată aceeași cerere", domain)
-                        time.sleep(180)
+                    if domain == "goodreads.com" and _goodreads_block_retries < len(self.goodreads_block_waits):
+                        wait = self.goodreads_block_waits[_goodreads_block_retries]
+                        log.warning("[%s] blocaje repetate: pauză %ds, apoi reîncerc aceeași cerere (%d/%d)",
+                                    domain, wait, _goodreads_block_retries + 1,
+                                    len(self.goodreads_block_waits))
+                        time.sleep(wait)
                         self._blocks[domain] = 0
                         return self.get(url, use_cache=use_cache,
-                                        _goodreads_cooldown_retry=False)
+                                        _goodreads_block_retries=_goodreads_block_retries + 1)
                     raise BlockedError(f"{domain}: {self._blocks[domain]} blocaje consecutive")
             else:
                 detail = f", x-amzn-waf-action={waf_action}" if waf_action else ""

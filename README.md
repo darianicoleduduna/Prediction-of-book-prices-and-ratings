@@ -14,7 +14,7 @@ Pentru Bookzone, `python run_bookzone_scraper.py` colectează produsele individu
 
 Pentru Elefant, `python run_elefant_scraper.py` parcurge implicit cele 17 categorii
 configurate, până la 100 de cărți unice per categorie, exclude pachetele/seriile complete,
-adaugă metadatele Goodreads când există potriviri și scrie în `data/date_elefant.csv`.
+adaugă metadatele Goodreads când există potriviri și scrie în `data/carti_elefant.csv`.
 
 Pentru Libris, `python run_libris_scraper.py` parcurge paginile categoriilor configurate în
 `run_libris_scraper.py`, până la 100 de cărți noi per categorie, și scrie în
