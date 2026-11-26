@@ -1,27 +1,24 @@
-# Book scraper (carturesti, libris, elefant, bookzone, goodreads)
+# Colectarea și analiza datelor despre cărți
 
-1. `pip install -r requirements.txt`
-2. Verifica fiecare site pe o pagina de produs reala:
-   `python run_scraper.py --probe <URL-produs>`
-   Daca un camp lipseste sau URL-ul de cautare nu da rezultate, ajusteaza `book_scraper/sites.py`.
-3. Ruleaza: `python run_scraper.py --sites libris --queries fantasy --pages 2 --limit 50`
+Proiectul adună informații despre cărți și prețuri de la Bookzone, Elefant, Libris și Libristo. Datele din paginile magazinelor sunt completate, acolo unde se găsește o potrivire suficient de sigură, cu ratinguri, numărul de evaluări, genuri, serii și titluri originale Goodreads.
 
-Pentru Bookzone, `python run_bookzone_scraper.py` colectează produsele individuale din cele
-șase categorii, exclude pachetele și seriile complete și scrie în `data/carti_bookzone.csv`.
-Încearcă să adauge keywords, seria și `original_title` găsite pe Goodreads, cu pauze de
-60–120 secunde între cererile Goodreads. Platforma este `online & fizic`, iar sursa `bookzone`.
-`--per-category-limit` schimbă limita pe categorie; `0` înseamnă fără limită.
+## Fluxul datelor
 
-Pentru Elefant, `python run_elefant_scraper.py` parcurge implicit cele 17 categorii
-configurate, până la 100 de cărți unice per categorie, exclude pachetele/seriile complete,
-adaugă metadatele Goodreads când există potriviri și scrie în `data/carti_elefant.csv`.
+Scraperele din `extraction/` parcurg categorii de produse și pagini de carte. Extrag titlul, autorul, editura, anul, numărul de pagini, prețul, moneda și alte detalii disponibile. Înregistrările duplicate dintre categorii sunt reduse, iar pachetele și seriile complete sunt eliminate din colectările Bookzone și Elefant.
 
-Pentru Libris, `python run_libris_scraper.py` parcurge paginile categoriilor configurate în
-`run_libris_scraper.py`, până la 100 de cărți noi per categorie, și scrie în
-`data/date_libris.csv`. Încearcă să completeze ratingul, numărul de evaluări, seria și
-keywords din Goodreads. Poți schimba lista din `LIBRIS_CATEGORIES` sau limita cu
-`--per-category-limit`; `0` înseamnă fără limită.
+Îmbogățirea Goodreads folosește ISBN-ul atunci când este disponibil și valid, apoi titlul și autorul. Potrivirile confirmate adaugă ratingul, numărul de evaluări, genurile, seria și titlul original. Cache-urile și fișierele de stare susțin reluarea procesării și păstrarea progresului.
 
-Protectii: delay aleator per domeniu (3-9s, goodreads 6-18s), pauze lungi la 20-40 cereri,
-backoff exponential + Retry-After, robots.txt, cache pe disc (reluare fara recerere),
-stop dupa 3 blocaje (403/429/captcha), rotatie UA/proxy (proxies.txt, optional).
+Scripturile de preprocesare combină datele magazinelor în `data/raw/extracted_data.csv` și pot crea un set separat cu înregistrările care au rating.
+Analiza setului filtrat rezumă ratingurile, anii de apariție, limbile și tipurile de copertă, cu grafice salvate separat în `data/preprocessed/figures/`.
+
+## Organizarea proiectului
+
+- `extraction/` — scripturi de colectare, îmbogățire Goodreads, retry și preprocesare, împreună cu pachetul comun `book_scraper/`.
+- `data/raw/` — CSV-urile curente pe magazin și setul concatenat.
+- `data/preprocessed/` — seturi pregătite pentru analiză, inclusiv fișierul filtrat după existența ratingului.
+- `docs/` — materiale de prezentare a proiectului.
+- `other/archive/` — exporturi mai vechi și surse intermediare.
+- `other/state/` — starea salvată pentru procesele reluabile.
+- `other/cache*/` și `other/logs/` — pagini descărcate și loguri de rulare.
+
+Datele păstrează câte un rând pentru fiecare ofertă dintr-o sursă. Astfel, aceeași carte poate apărea de mai multe ori, cu prețurile observate la magazine diferite.
